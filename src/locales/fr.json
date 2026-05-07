@@ -4,6 +4,7 @@
     "features": "Équipements",
     "skipper": "Votre Skipper",
     "pricing": "Tarifs",
+    "gallery": "Galerie",
     "contact": "Contact",
     "book": "Appeler pour réserver"
   },
@@ -109,7 +110,7 @@
     "q5": "Pouvons-nous choisir notre propre itinéraire ?",
     "a5": "Absolument ! L'itinéraire est flexible. Vous me dites ce que vous aimez (plages de sable, criques sauvages, snorkeling) et je vous y emmène.",
     "q6": "Y a-t-il des toilettes à bord ?",
-    "a6": "Le bateau dispose d'une cabine spacieuse pour se changer en toute intimité, mais il n'y a pas de vraies toilettes à bord (douchette d'eau douce disponible sur le pont)."
+    "a6": "Oui, le bateau dispose de vraies toilettes marines dans la cabine, ainsi qu'une douchette d'eau douce sur le pont."
   },
   "location": {
     "title": "Accès & Parkings",

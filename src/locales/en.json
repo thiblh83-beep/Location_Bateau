@@ -4,6 +4,7 @@
     "features": "Features",
     "skipper": "Your Skipper",
     "pricing": "Pricing",
+    "gallery": "Gallery",
     "contact": "Contact",
     "book": "Call to Book"
   },
@@ -107,7 +108,7 @@
     "q5": "Can we choose our own itinerary?",
     "a5": "Absolutely! The itinerary is flexible. You tell me what you like (sandy beaches, wild coves, snorkeling) and I'll take you there.",
     "q6": "Is there a toilet on board?",
-    "a6": "The boat has a spacious cabin to change clothes in private, but there are no real toilets on board (a freshwater shower is available on deck)."
+    "a6": "Yes, the boat is equipped with real marine toilets in the cabin, as well as a freshwater shower on the deck."
   },
   "location": {
     "title": "Access & Parking",

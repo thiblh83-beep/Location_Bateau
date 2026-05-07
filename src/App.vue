@@ -1,16 +1,27 @@
 <template>
   <div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="top-links">
+          <a href="tel:+33612345678"><PhoneIcon size="14" /> +33 6 12 34 56 78</a>
+          <a href="mailto:LocBoat83@outlook.com"><MailIcon size="14" /> LocBoat83@outlook.com</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav :class="['navbar', { 'scrolled': isScrolled }]">
       <div class="container nav-content">
         <div class="logo">
-          <AnchorIcon class="logo-icon" />
-          <span>LocBoat</span>
+          <img src="./assets/logo.png" alt="LocBoat Logo" class="logo-img" />
+          <span style="display: none;">LocBoat</span>
         </div>
         <div class="nav-links">
           <a href="#skipper">{{ t('nav.skipper') }}</a>
           <a href="#features">{{ t('nav.features') }}</a>
           <a href="#pricing">{{ t('nav.pricing') }}</a>
+          <a href="#gallery">{{ t('nav.gallery') }}</a>
           <button class="lang-switch" @click="toggleLocale">
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </button>
@@ -450,38 +461,73 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+/* Top Bar */
+.top-bar {
+  background: var(--bg-color);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.top-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.top-links a:hover {
+  color: var(--primary-color);
+}
+
 /* Navigation */
 .navbar {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 36px; /* Below top-bar */
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   transition: var(--transition);
+  background: white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .navbar.scrolled {
-  background: rgba(4, 30, 66, 0.95);
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 
 .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: var(--primary-color);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 800;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
@@ -511,9 +557,9 @@ onUnmounted(() => {
 }
 
 .lang-switch {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
+  background: var(--bg-color);
+  border: 1px solid var(--primary-light);
+  color: var(--primary-color);
   padding: 0.4rem 1rem;
   border-radius: 99px;
   cursor: pointer;
@@ -522,8 +568,8 @@ onUnmounted(() => {
 }
 
 .lang-switch:hover {
-  background: white;
-  color: var(--primary-color);
+  background: var(--primary-color);
+  color: white;
 }
 
 .nav-btn {
