@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "features": "Équipements",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "hero": {
+    "title": "Location Cap Camarat 7.15 avec Skipper",
+    "subtitle": "Naviguez vers Porquerolles et la Presqu'île de Giens. Eaux turquoises garanties ! Location avec skipper uniquement pour une journée 100% détente.",
+    "cta": "Réserver maintenant",
+    "location": "Départ : Port de la Seyne-sur-Mer",
+    "parking": "Grand parking & borne de recharge à 1 min à pied"
+  },
+  "features": {
+    "title": "Équipements & Confort",
+    "sunbed": "Grand bain de soleil avant",
+    "sunbed_desc": "Idéal pour se prélasser sous le soleil de la Méditerranée.",
+    "dining": "Carré arrière pour manger",
+    "dining_desc": "Espace convivial pour vos repas en mer sous le taud de soleil.",
+    "snorkeling": "Matériel de Snorkeling",
+    "snorkeling_desc": "Palmes, masques et tubas à disposition pour explorer les fonds marins.",
+    "cabin": "Cabine 2 personnes",
+    "cabin_desc": "Espace pour se reposer ou ranger vos affaires.",
+    "shower": "Douchette & Échelle de bain",
+    "shower_desc": "Rincez-vous à l'eau douce après vos baignades.",
+    "engine": "Moteur Mercury 250 CV",
+    "engine_desc": "Puissance idéale pour rejoindre rapidement les plus beaux mouillages."
+  },
+  "pricing": {
+    "title": "Forfaits & Tarifs",
+    "subtitle": "Location avec skipper inclus. SANS CAUTION. Essence non comprise.",
+    "full_day": "Journée Entière",
+    "full_day_time": "9h - 17h ou 10h - 18h",
+    "full_day_high": "750€ (Haute saison)",
+    "full_day_low": "600€ (Basse saison)",
+    "half_day": "Demi-journée",
+    "half_day_time": "9h - 14h ou 14h - 18h",
+    "half_day_high": "450€ (Haute saison)",
+    "half_day_low": "350€ (Basse saison)",
+    "no_deposit": "SANS CAUTION"
+  },
+  "destinations": {
+    "title": "Destinations de Rêve",
+    "porquerolles": "Île de Porquerolles",
+    "giens": "Presqu'île de Giens",
+    "turquoise": "Eaux turquoises & criques secrètes"
+  },
+  "contact": {
+    "title": "Prêt à naviguer ?",
+    "desc": "Contactez-nous pour vérifier les disponibilités et organiser votre sortie en mer.",
+    "phone": "Téléphone",
+    "email": "Email",
+    "send": "Envoyer un message"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}

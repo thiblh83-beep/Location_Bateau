@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Cap Camarat 7.15 Rental with Skipper",
+    "subtitle": "Sail to Porquerolles and the Giens Peninsula. Turquoise waters guaranteed! Skippered charter only for a 100% relaxing day.",
+    "cta": "Book Now",
+    "location": "Departure: Port of La Seyne-sur-Mer",
+    "parking": "Large parking lot & EV charging station 1 min walk away"
+  },
+  "features": {
+    "title": "Features & Comfort",
+    "sunbed": "Large front sunbed",
+    "sunbed_desc": "Perfect for lounging under the Mediterranean sun.",
+    "dining": "Rear dining area",
+    "dining_desc": "Friendly space for your meals at sea under the sun awning.",
+    "snorkeling": "Snorkeling Gear",
+    "snorkeling_desc": "Fins, masks, and snorkels available to explore the seabed.",
+    "cabin": "2-Person Cabin",
+    "cabin_desc": "Space to rest or store your belongings.",
+    "shower": "Freshwater Shower & Swim Ladder",
+    "shower_desc": "Rinse off with fresh water after swimming.",
+    "engine": "250 HP Mercury Engine",
+    "engine_desc": "Ideal power to quickly reach the most beautiful anchorages."
+  },
+  "pricing": {
+    "title": "Packages & Rates",
+    "subtitle": "Skipper included. NO DEPOSIT. Fuel not included.",
+    "full_day": "Full Day",
+    "full_day_time": "9am - 5pm or 10am - 6pm",
+    "full_day_high": "€750 (High season)",
+    "full_day_low": "€600 (Low season)",
+    "half_day": "Half Day",
+    "half_day_time": "9am - 2pm or 2pm - 6pm",
+    "half_day_high": "€450 (High season)",
+    "half_day_low": "€350 (Low season)",
+    "no_deposit": "NO DEPOSIT"
+  },
+  "destinations": {
+    "title": "Dream Destinations",
+    "porquerolles": "Porquerolles Island",
+    "giens": "Giens Peninsula",
+    "turquoise": "Turquoise waters & secret coves"
+  },
+  "contact": {
+    "title": "Ready to set sail?",
+    "desc": "Contact us to check availability and organize your sea trip.",
+    "phone": "Phone",
+    "email": "Email",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
