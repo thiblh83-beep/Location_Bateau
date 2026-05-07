@@ -175,6 +175,11 @@
             <h3>{{ t('itineraries.sanpeyre') }}</h3>
             <p>{{ t('itineraries.sanpeyre_desc') }}</p>
           </div>
+          <div class="itinerary-card itinerary-card--custom">
+            <div class="itinerary-icon"><CompassIcon size="32" /></div>
+            <h3>{{ t('itineraries.custom') }}</h3>
+            <p>{{ t('itineraries.custom_desc') }}</p>
+          </div>
         </div>
 
         <!-- Exploration -->

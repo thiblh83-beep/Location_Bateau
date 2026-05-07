@@ -49,7 +49,7 @@
   },
   "itineraries": {
     "title": "Destinations à la Carte",
-    "subtitle": "Choisissez votre ambiance ! L'essence n'étant pas comprise, voici deux types de sorties :",
+    "subtitle": "Choisissez votre ambiance !\n L'essence n'étant pas comprise, voici deux types de sorties :",
     "eco_title": "Évasion Locale (Plus Économique)",
     "explo_title": "Grandes Explorations",
     "porquerolles": "Porquerolles & Eaux Turquoises",
@@ -65,7 +65,9 @@
     "carqueiranne": "Carqueiranne & Ses Criques",
     "carqueiranne_desc": "⏱ 30 min de navigation \nVillage côtier authentique avec de superbes criques rocheuses. Eaux cristallines idéales pour la baignade et le snorkeling dans un cadre préservé.",
     "sanpeyre": "Anse de San Peyre",
-    "sanpeyre_desc": "⏱ 25 min de navigation \nUne anse sauvage et peu fréquentée, nichée entre les falaises. Parfaite pour un mouillage calme et une baignade tranquille loin de l'agitation."
+    "sanpeyre_desc": "⏱ 25 min de navigation \nUne anse sauvage et peu fréquentée, nichée entre les falaises. Parfaite pour un mouillage calme et une baignade tranquille loin de l'agitation.",
+    "custom": "Où bon vous semble 🗺️",
+    "custom_desc": "Vous avez une destination en tête ? Dites-le moi ! L'itinéraire est entièrement personnalisable selon vos envies, la météo et le vent du jour."
   },
   "pricing": {
     "title": "Nos Formules",
