@@ -195,59 +195,53 @@
         
         <div class="pricing-cards">
           <!-- Half Day -->
-          <div class="pricing-card dark-card-text">
-            <div class="card-header">
-              <h3>{{ t('pricing.half_day') }}</h3>
-              <p>{{ t('pricing.half_day_time') }}</p>
-            </div>
-            <div class="card-body">
-              <div class="price-row">
-                <span class="price">{{ t('pricing.half_day_high') }}</span>
+          <div class="pricing-card">
+            <div class="card-label">Demi-journée</div>
+            <div class="card-time">{{ t('pricing.half_day_time') }}</div>
+            <div class="card-prices">
+              <div class="season-price">
+                <span class="season-label">Juillet – Août</span>
+                <span class="season-amount">450€</span>
               </div>
-              <div class="price-row">
-                <span class="price-low">{{ t('pricing.half_day_low') }}</span>
+              <div class="season-divider"></div>
+              <div class="season-price">
+                <span class="season-label">Hors saison</span>
+                <span class="season-amount season-amount--low">350€</span>
               </div>
             </div>
-            <div class="card-footer">
-              <span class="no-deposit"><ShieldCheckIcon size="16"/> {{ t('pricing.no_deposit') }}</span>
-            </div>
+            <div class="card-badge"><ShieldCheckIcon size="14"/> {{ t('pricing.no_deposit') }}</div>
           </div>
 
-          <!-- Full Day -->
-          <div class="pricing-card featured">
-            <div class="popular-tag">Idéal</div>
-            <div class="card-header">
-              <h3 class="text-white">{{ t('pricing.full_day') }}</h3>
-              <p class="text-white opacity-80">{{ t('pricing.full_day_time') }}</p>
-            </div>
-            <div class="card-body">
-              <div class="price-row">
-                <span class="price text-white">{{ t('pricing.full_day_high') }}</span>
+          <!-- Full Day (featured) -->
+          <div class="pricing-card pricing-card--featured">
+            <div class="featured-tag">Idéal</div>
+            <div class="card-label">Journée Entière</div>
+            <div class="card-time">{{ t('pricing.full_day_time') }}</div>
+            <div class="card-prices">
+              <div class="season-price">
+                <span class="season-label">Juillet – Août</span>
+                <span class="season-amount">750€</span>
               </div>
-              <div class="price-row">
-                <span class="price-low text-white opacity-80">{{ t('pricing.full_day_low') }}</span>
+              <div class="season-divider"></div>
+              <div class="season-price">
+                <span class="season-label">Hors saison</span>
+                <span class="season-amount season-amount--low">600€</span>
               </div>
             </div>
-            <div class="card-footer">
-              <span class="no-deposit text-white"><ShieldCheckIcon size="16"/> {{ t('pricing.no_deposit') }}</span>
-            </div>
+            <div class="card-badge"><ShieldCheckIcon size="14"/> {{ t('pricing.no_deposit') }}</div>
           </div>
 
           <!-- Sunset -->
-          <div class="pricing-card sunset-card dark-card-text">
-            <div class="card-header">
-              <h3>{{ t('pricing.sunset') }}</h3>
-              <p>{{ t('pricing.sunset_time') }}</p>
-            </div>
-            <div class="card-body">
-              <p class="text-center mb-4">{{ t('pricing.sunset_desc') }}</p>
-              <div class="price-row">
-                <span class="price sunset-price">{{ t('pricing.sunset_price') }}</span>
+          <div class="pricing-card pricing-card--sunset">
+            <div class="card-label">🌅 Apéro Sunset</div>
+            <div class="card-time">{{ t('pricing.sunset_time') }}</div>
+            <div class="card-prices">
+              <div class="season-price">
+                <span class="season-label">{{ t('pricing.sunset_desc') }}</span>
+                <span class="season-amount season-amount--sunset">300€</span>
               </div>
             </div>
-            <div class="card-footer">
-              <a href="tel:+33635407550" class="btn btn-secondary w-full" style="color: white; background: #0085ff; border: none;">Sur mesure</a>
-            </div>
+            <div class="card-badge"><ShieldCheckIcon size="14"/> {{ t('pricing.no_deposit') }}</div>
           </div>
         </div>
       </div>
@@ -927,126 +921,151 @@ onUnmounted(() => {
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: end;
 }
 
+/* Base card */
 .pricing-card {
   background: white;
-  border-radius: 2rem;
-  padding: 3.5rem 2.5rem;
-  box-shadow: var(--shadow-md);
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(10, 37, 64, 0.1);
   position: relative;
-  transition: var(--transition);
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid rgba(10, 37, 64, 0.07);
+  transition: var(--transition);
 }
 
 .pricing-card:hover {
-  transform: translateY(-15px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(10, 37, 64, 0.15);
 }
 
-.pricing-card.featured {
-  background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-light) 100%);
-  color: white;
-  transform: scale(1.05);
-  box-shadow: var(--shadow-lg);
-}
-
-.pricing-card.featured:hover {
-  transform: scale(1.05) translateY(-10px);
-}
-
-.pricing-card.featured h3, 
-.pricing-card.featured .price {
+/* Featured (Journée Entière) */
+.pricing-card--featured {
+  background: linear-gradient(160deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  border: none;
+  transform: scale(1.04);
+  box-shadow: 0 16px 50px rgba(10, 37, 64, 0.35);
   color: white;
 }
 
-.sunset-card {
-  background: linear-gradient(135deg, #FFF5E1 0%, #FFE4E1 100%);
+.pricing-card--featured:hover {
+  transform: scale(1.04) translateY(-6px);
 }
 
-.sunset-card h3 {
-  color: var(--secondary-color);
+.pricing-card--featured .card-label,
+.pricing-card--featured .card-time,
+.pricing-card--featured .season-label {
+  color: rgba(255,255,255,0.75);
 }
 
-.popular-tag {
+.pricing-card--featured .season-amount {
+  color: white;
+}
+
+.pricing-card--featured .season-divider {
+  border-color: rgba(255,255,255,0.15);
+}
+
+.pricing-card--featured .card-badge {
+  border-color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.9);
+}
+
+/* Sunset card */
+.pricing-card--sunset {
+  background: linear-gradient(160deg, #e8f4fd 0%, #dbeeff 100%);
+  border-color: rgba(0, 133, 255, 0.15);
+}
+
+/* Featured tag */
+.featured-tag {
   position: absolute;
-  top: -15px;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  background: var(--secondary-color);
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.35rem 1.5rem;
   border-radius: 99px;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  box-shadow: 0 4px 10px rgba(0, 229, 255, 0.4);
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 180, 216, 0.4);
 }
 
-.card-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px dashed rgba(0,0,0,0.1);
-}
-
-.pricing-card.featured .card-header {
-  border-bottom: 2px dashed rgba(255,255,255,0.2);
-}
-
-.card-header h3 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.price-row {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.price {
-  font-size: 2.8rem;
+/* Card content */
+.card-label {
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--primary-color);
+  font-family: var(--font-heading);
 }
 
-.price-low {
-  font-size: 1.3rem;
+.card-time {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: -0.75rem;
+}
+
+.card-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.season-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+}
+
+.season-divider {
+  border-top: 1px dashed rgba(10, 37, 64, 0.12);
+}
+
+.season-label {
+  font-size: 0.95rem;
   color: var(--text-secondary);
   font-weight: 500;
 }
 
-.pricing-card.featured .price-low {
-  color: rgba(255,255,255,0.8);
+.season-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
 }
 
-.sunset-price {
-  font-size: 2rem;
-  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.season-amount--low {
+  font-size: 1.4rem;
+  color: var(--primary-light);
 }
 
-.card-body {
-  flex-grow: 1;
+.season-amount--sunset {
+  color: var(--accent-color);
 }
 
-.card-footer {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.no-deposit {
+.card-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #10B981;
-  font-size: 1.1rem;
+  border: 1px solid #10B98130;
+  background: #10B98108;
+  padding: 0.4rem 0.9rem;
+  border-radius: 99px;
+  align-self: flex-start;
 }
 
 /* Steps Section */
