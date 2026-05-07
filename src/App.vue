@@ -68,19 +68,19 @@
     <section id="features" class="section-dark">
       <div class="container">
         <h2 class="section-title text-white">{{ t('features.title') }}</h2>
-        <p class="text-center text-white opacity-80 max-w-2xl mx-auto mb-8 text-lg">
+        <p class="boat-desc">
           {{ t('features.boat_desc') }}
         </p>
         
-        <div class="boat-stats-container mb-12">
-          <div class="stat-badge glass-dark">
-            <span class="font-bold">{{ t('features.stat_length') }}</span>
+        <div class="boat-stats-container">
+          <div class="stat-badge">
+            <span>{{ t('features.stat_length') }}</span>
           </div>
-          <div class="stat-badge glass-dark">
-            <span class="font-bold">{{ t('features.stat_capacity') }}</span>
+          <div class="stat-badge">
+            <span>{{ t('features.stat_capacity') }}</span>
           </div>
-          <div class="stat-badge glass-dark">
-            <span class="font-bold">{{ t('features.stat_engine') }}</span>
+          <div class="stat-badge">
+            <span>{{ t('features.stat_engine') }}</span>
           </div>
         </div>
 
@@ -126,8 +126,8 @@
         <p class="pricing-subtitle">{{ t('itineraries.subtitle') }}</p>
         
         <!-- Local / Eco -->
-        <h3 class="itinerary-category-title mt-8 mb-6 text-2xl font-bold text-accent text-center">{{ t('itineraries.eco_title') }}</h3>
-        <div class="itineraries-grid mb-12">
+        <h3 class="itinerary-category-title">{{ t('itineraries.eco_title') }}</h3>
+        <div class="itineraries-grid" style="margin-bottom: 3rem;">
           <div class="itinerary-card">
             <div class="itinerary-icon"><MountainIcon size="32" /></div>
             <h3>{{ t('itineraries.sicie') }}</h3>
@@ -141,7 +141,7 @@
         </div>
 
         <!-- Exploration -->
-        <h3 class="itinerary-category-title mt-8 mb-6 text-2xl font-bold text-accent text-center">{{ t('itineraries.explo_title') }}</h3>
+        <h3 class="itinerary-category-title">{{ t('itineraries.explo_title') }}</h3>
         <div class="itineraries-grid">
           <div class="itinerary-card">
             <div class="itinerary-icon"><PalmtreeIcon size="32" /></div>
@@ -322,14 +322,14 @@
         <div class="location-container">
           <div class="location-info">
             <div class="location-card glass-light">
-              <div class="flex items-center gap-4 mb-4">
+              <div class="location-card-header">
                 <CarIcon size="32" class="text-accent" />
-                <h3 class="text-xl font-bold">{{ t('location.main_parking') }}</h3>
+                <h3>{{ t('location.main_parking') }}</h3>
               </div>
-              <p class="mb-6">{{ t('location.main_desc') }}</p>
+              <p class="location-desc">{{ t('location.main_desc') }}</p>
               
-              <h4 class="font-semibold mb-2">{{ t('location.other_parkings') }}</h4>
-              <p class="text-sm text-secondary">{{ t('location.list') }}</p>
+              <h4>{{ t('location.other_parkings') }}</h4>
+              <p class="location-list">{{ t('location.list') }}</p>
             </div>
           </div>
           
@@ -356,10 +356,10 @@
           <p>{{ t('contact.desc') }}</p>
           <div class="cta-buttons">
             <a href="tel:+33612345678" class="btn btn-primary cta-main-btn">
-              <PhoneIcon size="24" class="mr-2" /> {{ t('contact.call_now') }} (+33 6 12 34 56 78)
+              <PhoneIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.call_now') }} (+33 6 12 34 56 78)
             </a>
             <a href="https://wa.me/33612345678" target="_blank" class="btn btn-whatsapp">
-              <MessageCircleIcon size="24" class="mr-2" /> {{ t('contact.whatsapp') }}
+              <MessageCircleIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.whatsapp') }}
             </a>
           </div>
         </div>
@@ -367,10 +367,10 @@
     </section>
 
     <!-- Social Section -->
-    <section class="section-dark" style="padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
-      <div class="container text-center">
-        <h3 class="text-white mb-4 text-2xl font-bold">{{ t('social.follow') }}</h3>
-        <a href="https://instagram.com" target="_blank" class="btn btn-secondary inline-flex items-center gap-2" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; border: none; font-size: 1.2rem; padding: 1rem 2rem;">
+    <section class="section-dark" style="padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div class="container" style="text-align: center;">
+        <h3 style="color: white; margin-bottom: 2rem; font-size: 1.8rem; font-weight: 700;">{{ t('social.follow') }}</h3>
+        <a href="https://instagram.com" target="_blank" class="btn btn-secondary social-btn">
           <InstagramIcon size="24" /> {{ t('social.insta_btn') }}
         </a>
       </div>
@@ -1143,6 +1143,35 @@ onUnmounted(() => {
   gap: 1rem;
 }
 
+.location-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.location-card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.location-desc {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.location-card h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.location-list {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
 .map-container {
   border-radius: 1.5rem;
   overflow: hidden;
@@ -1212,6 +1241,26 @@ onUnmounted(() => {
   background-color: #128C7E;
   transform: translateY(-3px);
   box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Social */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 99px;
+  transition: transform 0.3s;
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+  color: white;
 }
 
 /* Footer */
