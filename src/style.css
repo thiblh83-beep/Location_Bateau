@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
-  --primary-color: #0077b6; /* Ocean blue */
-  --primary-light: #0096c7;
-  --secondary-color: #48cae4; /* Light bright blue */
-  --accent-color: #ff9f1c; /* Sun orange */
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --bg-color: #f8fafc;
-  --bg-card: rgba(255, 255, 255, 0.9);
+  --primary-color: #0a2540;    /* Marine profond */
+  --primary-light: #1b4f8a;
+  --secondary-color: #00b4d8; /* Turquoise méditerranée */
+  --accent-color: #0085ff;    /* Bleu vif */
+  --text-primary: #0a2540;
+  --text-secondary: #4a6080;
+  --bg-color: #f0f7ff;        /* Blanc légèrement bleuté */
+  --bg-card: rgba(255, 255, 255, 0.95);
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);

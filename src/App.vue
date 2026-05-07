@@ -246,7 +246,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a href="tel:+33635407550" class="btn btn-secondary w-full" style="color: white; background: #FF7F50; border: none;">Sur mesure</a>
+              <a href="tel:+33635407550" class="btn btn-secondary w-full" style="color: white; background: #0085ff; border: none;">Sur mesure</a>
             </div>
           </div>
         </div>
@@ -969,7 +969,7 @@ onUnmounted(() => {
 }
 
 .sunset-card h3 {
-  color: #FF7F50;
+  color: var(--secondary-color);
 }
 
 .popular-tag {
@@ -1026,7 +1026,7 @@ onUnmounted(() => {
 
 .sunset-price {
   font-size: 2rem;
-  background: linear-gradient(90deg, #FF7F50, #FF4500);
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
