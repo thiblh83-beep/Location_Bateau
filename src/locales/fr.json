@@ -2,57 +2,65 @@
   "nav": {
     "home": "Accueil",
     "features": "Équipements",
+    "skipper": "Votre Skipper",
     "pricing": "Tarifs",
     "contact": "Contact",
-    "book": "Réserver"
+    "book": "Appeler pour réserver"
   },
   "hero": {
-    "title": "Location Cap Camarat 7.15 avec Skipper",
-    "subtitle": "Naviguez vers Porquerolles et la Presqu'île de Giens. Eaux turquoises garanties ! Location avec skipper uniquement pour une journée 100% détente.",
+    "title": "Votre Journée en Mer avec Skipper Privé",
+    "subtitle": "Embarquez sur un Cap Camarat 7.15 WA pour explorer Porquerolles et les plus belles criques. Laissez-vous guider, profitez du soleil, on s'occupe du reste.",
     "cta": "Réserver maintenant",
-    "location": "Départ : Port de la Seyne-sur-Mer",
-    "parking": "Grand parking & borne de recharge à 1 min à pied"
+    "location": "Départ : La Seyne-sur-Mer",
+    "parking": "Grand parking gratuit & borne auto à 1min"
+  },
+  "skipper": {
+    "title": "Naviguez l'esprit tranquille",
+    "subtitle": "Votre Skipper : Thibault",
+    "desc1": "Passionné par la mer depuis mon plus jeune âge et véritable enfant de la région, je connais parfaitement les côtes varoises, des eaux cristallines de Porquerolles aux criques secrètes de la Presqu'île de Giens.",
+    "desc2": "Mon objectif ? Vous offrir une journée inoubliable, en toute sécurité. Que vous cherchiez un mouillage calme pour vous détendre ou les meilleurs spots de snorkeling, laissez-vous guider !",
+    "bullet1": "Zéro stress : ni caution, ni responsabilité matérielle",
+    "bullet2": "Flexibilité totale sur votre itinéraire",
+    "bullet3": "Connaissance experte des meilleurs spots"
   },
   "features": {
-    "title": "Équipements & Confort",
-    "sunbed": "Grand bain de soleil avant",
-    "sunbed_desc": "Idéal pour se prélasser sous le soleil de la Méditerranée.",
-    "dining": "Carré arrière pour manger",
-    "dining_desc": "Espace convivial pour vos repas en mer sous le taud de soleil.",
-    "snorkeling": "Matériel de Snorkeling",
-    "snorkeling_desc": "Palmes, masques et tubas à disposition pour explorer les fonds marins.",
-    "cabin": "Cabine 2 personnes",
-    "cabin_desc": "Espace pour se reposer ou ranger vos affaires.",
-    "shower": "Douchette & Échelle de bain",
-    "shower_desc": "Rincez-vous à l'eau douce après vos baignades.",
-    "engine": "Moteur Mercury 250 CV",
-    "engine_desc": "Puissance idéale pour rejoindre rapidement les plus beaux mouillages."
+    "title": "Équipements & Petits Plus",
+    "sunbed": "Immense Bain de Soleil",
+    "sunbed_desc": "À l'avant du bateau, l'espace parfait pour bronzer confortablement.",
+    "dining": "Carré Arrière Ombragé",
+    "dining_desc": "Mangez à l'ombre grâce au grand taud de soleil. Emmenez votre pique-nique !",
+    "fun": "Snorkeling & Paddle",
+    "fun_desc": "Masques, tubas fournis. Un Paddle est disponible sur simple demande !",
+    "comfort": "Enceinte & Glacière",
+    "comfort_desc": "Glacière à disposition pour vos boissons, et musique via Bluetooth.",
+    "shower": "Douchette d'Eau Douce",
+    "shower_desc": "Rincez-vous après la baignade grâce à l'échelle de bain et la douchette.",
+    "cabin": "Cabine Spacieuse",
+    "cabin_desc": "Pour faire une sieste, se changer, ou garder vos affaires au sec."
   },
   "pricing": {
-    "title": "Forfaits & Tarifs",
-    "subtitle": "Location avec skipper inclus. SANS CAUTION. Essence non comprise.",
+    "title": "Nos Formules",
+    "subtitle": "Tarifs nets avec Skipper inclus. ZÉRO CAUTION. (Essence non comprise : le plein est fait à la pompe en fin de journée selon votre consommation).",
     "full_day": "Journée Entière",
-    "full_day_time": "9h - 17h ou 10h - 18h",
-    "full_day_high": "750€ (Haute saison)",
-    "full_day_low": "600€ (Basse saison)",
+    "full_day_time": "9h-17h ou 10h-18h (Modulable)",
+    "full_day_high": "750€ (Juillet-Août)",
+    "full_day_low": "600€ (Hors saison)",
     "half_day": "Demi-journée",
-    "half_day_time": "9h - 14h ou 14h - 18h",
-    "half_day_high": "450€ (Haute saison)",
-    "half_day_low": "350€ (Basse saison)",
+    "half_day_time": "9h-14h ou 14h-18h",
+    "half_day_high": "450€ (Juillet-Août)",
+    "half_day_low": "350€ (Hors saison)",
+    "sunset": "Apéro Sunset 🌅",
+    "sunset_time": "Horaires flexibles sur demande",
+    "sunset_desc": "Profitez du coucher de soleil en mer. Idéal pour un apéro entre amis ou en amoureux.",
+    "sunset_price": "Sur devis",
     "no_deposit": "SANS CAUTION"
   },
-  "destinations": {
-    "title": "Destinations de Rêve",
-    "porquerolles": "Île de Porquerolles",
-    "giens": "Presqu'île de Giens",
-    "turquoise": "Eaux turquoises & criques secrètes"
-  },
   "contact": {
-    "title": "Prêt à naviguer ?",
-    "desc": "Contactez-nous pour vérifier les disponibilités et organiser votre sortie en mer.",
+    "title": "Prêt à jeter l'ancre ?",
+    "desc": "La réservation se fait de vive voix ! Appelez-moi directement pour vérifier les disponibilités, discuter de votre projet et personnaliser votre journée.",
     "phone": "Téléphone",
-    "email": "Email",
-    "send": "Envoyer un message"
+    "call_now": "Appeler Thibault",
+    "whatsapp": "Message WhatsApp"
   },
   "footer": {
     "rights": "Tous droits réservés."

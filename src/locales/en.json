@@ -2,57 +2,65 @@
   "nav": {
     "home": "Home",
     "features": "Features",
+    "skipper": "Your Skipper",
     "pricing": "Pricing",
     "contact": "Contact",
-    "book": "Book Now"
+    "book": "Call to Book"
   },
   "hero": {
-    "title": "Cap Camarat 7.15 Rental with Skipper",
-    "subtitle": "Sail to Porquerolles and the Giens Peninsula. Turquoise waters guaranteed! Skippered charter only for a 100% relaxing day.",
+    "title": "Your Sea Day with a Private Skipper",
+    "subtitle": "Board a Cap Camarat 7.15 WA to explore Porquerolles and the most beautiful coves. Let us guide you, enjoy the sun, we'll take care of the rest.",
     "cta": "Book Now",
-    "location": "Departure: Port of La Seyne-sur-Mer",
-    "parking": "Large parking lot & EV charging station 1 min walk away"
+    "location": "Departure: La Seyne-sur-Mer",
+    "parking": "Free parking & EV charger 1 min away"
+  },
+  "skipper": {
+    "title": "Sail with peace of mind",
+    "subtitle": "Your Skipper: Thibault",
+    "desc1": "Passionate about the sea since childhood and a true local, I know the Var coast perfectly, from the crystal clear waters of Porquerolles to the secret coves of the Giens Peninsula.",
+    "desc2": "My goal? To offer you an unforgettable and safe day. Whether you're looking for a quiet anchorage to relax or the best snorkeling spots, let me guide you!",
+    "bullet1": "Zero stress: no deposit, no material responsibility",
+    "bullet2": "Total flexibility on your itinerary",
+    "bullet3": "Expert knowledge of the best spots"
   },
   "features": {
-    "title": "Features & Comfort",
-    "sunbed": "Large front sunbed",
-    "sunbed_desc": "Perfect for lounging under the Mediterranean sun.",
-    "dining": "Rear dining area",
-    "dining_desc": "Friendly space for your meals at sea under the sun awning.",
-    "snorkeling": "Snorkeling Gear",
-    "snorkeling_desc": "Fins, masks, and snorkels available to explore the seabed.",
-    "cabin": "2-Person Cabin",
-    "cabin_desc": "Space to rest or store your belongings.",
-    "shower": "Freshwater Shower & Swim Ladder",
-    "shower_desc": "Rinse off with fresh water after swimming.",
-    "engine": "250 HP Mercury Engine",
-    "engine_desc": "Ideal power to quickly reach the most beautiful anchorages."
+    "title": "Features & Extras",
+    "sunbed": "Huge Sunbed",
+    "sunbed_desc": "At the front of the boat, the perfect space to sunbathe comfortably.",
+    "dining": "Shaded Dining Area",
+    "dining_desc": "Eat in the shade thanks to the large sun awning. Bring your picnic!",
+    "fun": "Snorkeling & Paddleboard",
+    "fun_desc": "Masks and snorkels provided. A paddleboard is available upon request!",
+    "comfort": "Speaker & Cooler",
+    "comfort_desc": "Cooler available for your drinks, and Bluetooth music.",
+    "shower": "Freshwater Shower",
+    "shower_desc": "Rinse off after a swim thanks to the swim ladder and shower.",
+    "cabin": "Spacious Cabin",
+    "cabin_desc": "To take a nap, change clothes, or keep your belongings dry."
   },
   "pricing": {
-    "title": "Packages & Rates",
-    "subtitle": "Skipper included. NO DEPOSIT. Fuel not included.",
+    "title": "Our Packages",
+    "subtitle": "Net rates with Skipper included. NO DEPOSIT. (Fuel not included: refilled at the pump at the end of the day based on your consumption).",
     "full_day": "Full Day",
-    "full_day_time": "9am - 5pm or 10am - 6pm",
-    "full_day_high": "€750 (High season)",
-    "full_day_low": "€600 (Low season)",
-    "half_day": "Half Day",
-    "half_day_time": "9am - 2pm or 2pm - 6pm",
-    "half_day_high": "€450 (High season)",
-    "half_day_low": "€350 (Low season)",
+    "full_day_time": "9am-5pm or 10am-6pm (Flexible)",
+    "full_day_high": "€750 (July-August)",
+    "full_day_low": "€600 (Off-season)",
+    "half_day": "Half-day",
+    "half_day_time": "9am-2pm or 2pm-6pm",
+    "half_day_high": "€450 (July-August)",
+    "half_day_low": "€350 (Off-season)",
+    "sunset": "Sunset Cruise 🌅",
+    "sunset_time": "Flexible hours on request",
+    "sunset_desc": "Enjoy the sunset at sea. Ideal for drinks with friends or a romantic evening.",
+    "sunset_price": "Upon request",
     "no_deposit": "NO DEPOSIT"
   },
-  "destinations": {
-    "title": "Dream Destinations",
-    "porquerolles": "Porquerolles Island",
-    "giens": "Giens Peninsula",
-    "turquoise": "Turquoise waters & secret coves"
-  },
   "contact": {
-    "title": "Ready to set sail?",
-    "desc": "Contact us to check availability and organize your sea trip.",
+    "title": "Ready to drop anchor?",
+    "desc": "Booking is done directly over the phone! Call me to check availability, discuss your plans, and customize your day.",
     "phone": "Phone",
-    "email": "Email",
-    "send": "Send Message"
+    "call_now": "Call Thibault",
+    "whatsapp": "WhatsApp Message"
   },
   "footer": {
     "rights": "All rights reserved."
