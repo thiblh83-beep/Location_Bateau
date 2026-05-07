@@ -123,7 +123,24 @@
     "call_now": "Appeler Thibault",
     "whatsapp": "Message WhatsApp"
   },
+  "gallery": {
+    "title": "La Galerie",
+    "subtitle": "Un aperçu de ce qui vous attend",
+    "placeholder": "Photo à venir"
+  },
+  "social": {
+    "follow": "Suivez nos aventures sur Instagram",
+    "insta_btn": "Rejoignez-nous"
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "content1": "Ce site est édité par Thibault, agissant en tant que loueur particulier/professionnel (statut à définir).",
+    "content2": "Hébergement : GitHub Pages.",
+    "content3": "Toutes les photos et contenus sont la propriété de l'éditeur du site. Toute reproduction est interdite sans autorisation préalable.",
+    "close": "Fermer"
+  },
   "footer": {
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions Légales"
   }
 }

@@ -121,7 +121,24 @@
     "call_now": "Call Thibault",
     "whatsapp": "WhatsApp Message"
   },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A glimpse of what awaits you",
+    "placeholder": "Photo coming soon"
+  },
+  "social": {
+    "follow": "Follow our adventures on Instagram",
+    "insta_btn": "Join Us"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "content1": "This site is published by Thibault, acting as a private/professional rental company (status to be defined).",
+    "content2": "Hosting: GitHub Pages.",
+    "content3": "All photos and content are the property of the site publisher. Any reproduction is prohibited without prior authorization.",
+    "close": "Close"
+  },
   "footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "legal": "Legal Notice"
   }
 }

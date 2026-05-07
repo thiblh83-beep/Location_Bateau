@@ -254,6 +254,23 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('gallery.title') }}</h2>
+        <p class="pricing-subtitle">{{ t('gallery.subtitle') }}</p>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item" v-for="n in 6" :key="n">
+            <div class="gallery-placeholder">
+              <CameraIcon size="48" class="text-primary opacity-50 mb-2" />
+              <span>{{ t('gallery.placeholder') }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials Section -->
     <section id="testimonials" class="section-dark testimonials-bg">
       <div class="container">
@@ -349,11 +366,35 @@
       </div>
     </section>
 
+    <!-- Social Section -->
+    <section class="section-dark" style="padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div class="container text-center">
+        <h3 class="text-white mb-4 text-2xl font-bold">{{ t('social.follow') }}</h3>
+        <a href="https://instagram.com" target="_blank" class="btn btn-secondary inline-flex items-center gap-2" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; border: none; font-size: 1.2rem; padding: 1rem 2rem;">
+          <InstagramIcon size="24" /> {{ t('social.insta_btn') }}
+        </a>
+      </div>
+    </section>
+
     <footer>
-      <div class="container">
+      <div class="container footer-content">
         <p>&copy; 2026 LocBoat - Thibault. {{ t('footer.rights') }}</p>
+        <button @click="showLegalModal = true" class="legal-link">{{ t('footer.legal') }}</button>
       </div>
     </footer>
+
+    <!-- Legal Modal -->
+    <div v-if="showLegalModal" class="modal-backdrop" @click="showLegalModal = false">
+      <div class="modal-content" @click.stop>
+        <h2>{{ t('legal.title') }}</h2>
+        <div class="modal-body">
+          <p>{{ t('legal.content1') }}</p>
+          <p>{{ t('legal.content2') }}</p>
+          <p>{{ t('legal.content3') }}</p>
+        </div>
+        <button @click="showLegalModal = false" class="btn btn-primary">{{ t('legal.close') }}</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -364,12 +405,13 @@ import {
   AnchorIcon, MapPinIcon, CarIcon, UserIcon, CheckCircleIcon,
   SunIcon, UtensilsIcon, WavesIcon, MusicIcon, BedIcon, DropletIcon,
   ShieldCheckIcon, PhoneIcon, MessageCircleIcon, PalmtreeIcon, MountainIcon, CompassIcon,
-  ChevronDownIcon
+  ChevronDownIcon, CameraIcon, InstagramIcon
 } from 'lucide-vue-next'
 
 const { t, locale } = useI18n()
 const isScrolled = ref(false)
 const activeFaq = ref(null)
+const showLegalModal = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
@@ -1179,6 +1221,103 @@ footer {
   text-align: center;
   padding: 3rem 0;
   font-size: 1.1rem;
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  aspect-ratio: 4/3;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: white;
+}
+
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 112, 243, 0.05), rgba(0, 229, 255, 0.05));
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.gallery-placeholder:hover {
+  background: linear-gradient(135deg, rgba(0, 112, 243, 0.1), rgba(0, 229, 255, 0.1));
+  transform: scale(1.05);
+}
+
+/* Footer & Legal */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-link {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+.legal-link:hover {
+  color: white;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.modal-body {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.modal-body p {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
