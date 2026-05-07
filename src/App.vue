@@ -528,7 +528,7 @@ onUnmounted(() => {
 }
 
 .logo-img {
-  height: 50px;
+  height: 75px;
   width: auto;
 }
 
