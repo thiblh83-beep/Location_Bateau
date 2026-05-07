@@ -4,7 +4,7 @@
     <div class="top-bar">
       <div class="container top-bar-content">
         <div class="top-links">
-          <a href="tel:+33612345678"><PhoneIcon size="14" /> +33 6 12 34 56 78</a>
+          <a href="tel:+33635407550"><PhoneIcon size="14" /> +33 6 35 40 75 50</a>
           <a href="mailto:LocBoat83@outlook.com"><MailIcon size="14" /> LocBoat83@outlook.com</a>
         </div>
       </div>
@@ -19,13 +19,13 @@
         </div>
         <div class="nav-links">
           <a href="#skipper">{{ t('nav.skipper') }}</a>
-          <a href="#features">{{ t('nav.features') }}</a>
+          <a href="#features">{{ t('nav.boat') }}</a>
           <a href="#pricing">{{ t('nav.pricing') }}</a>
           <a href="#gallery">{{ t('nav.gallery') }}</a>
           <button class="lang-switch" @click="toggleLocale">
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </button>
-          <a href="tel:+33612345678" class="btn btn-primary nav-btn">{{ t('nav.book') }}</a>
+          <a href="tel:+33635407550" class="btn btn-primary nav-btn">{{ t('nav.book') }}</a>
         </div>
       </div>
     </nav>
@@ -41,7 +41,7 @@
             <span class="badge"><MapPinIcon size="16" /> {{ t('hero.location') }}</span>
             <span class="badge"><CarIcon size="16" /> {{ t('hero.parking') }}</span>
           </div>
-          <a href="tel:+33612345678" class="btn btn-primary cta-btn">
+          <a href="tel:+33635407550" class="btn btn-primary cta-btn">
             <PhoneIcon size="20" class="mr-2" /> {{ t('hero.cta') }}
           </a>
         </div>
@@ -150,6 +150,7 @@
         
         <!-- Local / Eco -->
         <h3 class="itinerary-category-title">{{ t('itineraries.eco_title') }}</h3>
+        <br>
         <div class="itineraries-grid" style="margin-bottom: 3rem;">
           <div class="itinerary-card">
             <div class="itinerary-icon"><MountainIcon size="32" /></div>
@@ -165,6 +166,7 @@
 
         <!-- Exploration -->
         <h3 class="itinerary-category-title">{{ t('itineraries.explo_title') }}</h3>
+        <br>
         <div class="itineraries-grid">
           <div class="itinerary-card">
             <div class="itinerary-icon"><PalmtreeIcon size="32" /></div>
@@ -244,7 +246,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a href="tel:+33612345678" class="btn btn-secondary w-full" style="color: white; background: #FF7F50; border: none;">Sur mesure</a>
+              <a href="tel:+33635407550" class="btn btn-secondary w-full" style="color: white; background: #FF7F50; border: none;">Sur mesure</a>
             </div>
           </div>
         </div>
@@ -378,10 +380,10 @@
           <h2 class="gradient-text">{{ t('contact.title') }}</h2>
           <p>{{ t('contact.desc') }}</p>
           <div class="cta-buttons">
-            <a href="tel:+33612345678" class="btn btn-primary cta-main-btn">
-              <PhoneIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.call_now') }} (+33 6 12 34 56 78)
+            <a href="tel:+33635407550" class="btn btn-primary cta-main-btn">
+              <PhoneIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.call_now') }} (+33 6 35 40 75 50)
             </a>
-            <a href="https://wa.me/33612345678" target="_blank" class="btn btn-whatsapp">
+            <a href="https://wa.me/33635407550" target="_blank" class="btn btn-whatsapp">
               <MessageCircleIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.whatsapp') }}
             </a>
             <a href="mailto:LocBoat83@outlook.com" class="btn btn-secondary" style="width: 100%; max-width: 500px; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">
