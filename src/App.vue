@@ -103,8 +103,44 @@
       </div>
     </section>
 
+    <!-- Itineraries -->
+    <section id="itineraries" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('itineraries.title') }}</h2>
+        <p class="pricing-subtitle">{{ t('itineraries.subtitle') }}</p>
+        
+        <div class="itineraries-grid">
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><PalmtreeIcon size="32" /></div>
+            <h3>{{ t('itineraries.porquerolles') }}</h3>
+            <p>{{ t('itineraries.porquerolles_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><MountainIcon size="32" /></div>
+            <h3>{{ t('itineraries.sicie') }}</h3>
+            <p>{{ t('itineraries.sicie_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><AnchorIcon size="32" /></div>
+            <h3>{{ t('itineraries.embiez') }}</h3>
+            <p>{{ t('itineraries.embiez_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><CompassIcon size="32" /></div>
+            <h3>{{ t('itineraries.giens') }}</h3>
+            <p>{{ t('itineraries.giens_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><MapPinIcon size="32" /></div>
+            <h3>{{ t('itineraries.mejean') }}</h3>
+            <p>{{ t('itineraries.mejean_desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Pricing Section -->
-    <section id="pricing" class="section-light">
+    <section id="pricing" class="section-dark">
       <div class="container">
         <h2 class="section-title">{{ t('pricing.title') }}</h2>
         <p class="pricing-subtitle">{{ t('pricing.subtitle') }}</p>
@@ -169,6 +205,109 @@
       </div>
     </section>
 
+    <!-- Steps Section -->
+    <section id="steps" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('steps.title') }}</h2>
+        <div class="steps-container">
+          <div class="step-box">
+            <div class="step-number">1</div>
+            <h3>{{ t('steps.step1') }}</h3>
+            <p>{{ t('steps.step1_desc') }}</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-box">
+            <div class="step-number">2</div>
+            <h3>{{ t('steps.step2') }}</h3>
+            <p>{{ t('steps.step2_desc') }}</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-box">
+            <div class="step-number">3</div>
+            <h3>{{ t('steps.step3') }}</h3>
+            <p>{{ t('steps.step3_desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-dark testimonials-bg">
+      <div class="container">
+        <h2 class="section-title text-white">{{ t('testimonials.title') }}</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-dark">
+            <div class="stars">★★★★★</div>
+            <p class="review">"{{ t('testimonials.review1') }}"</p>
+            <p class="name">- {{ t('testimonials.name1') }}</p>
+          </div>
+          <div class="testimonial-card glass-dark">
+            <div class="stars">★★★★★</div>
+            <p class="review">"{{ t('testimonials.review2') }}"</p>
+            <p class="name">- {{ t('testimonials.name2') }}</p>
+          </div>
+          <div class="testimonial-card glass-dark">
+            <div class="stars">★★★★★</div>
+            <p class="review">"{{ t('testimonials.review3') }}"</p>
+            <p class="name">- {{ t('testimonials.name3') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('faq.title') }}</h2>
+        <div class="faq-container">
+          <div class="faq-item" v-for="n in 3" :key="n" @click="toggleFaq(n)" :class="{ active: activeFaq === n }">
+            <div class="faq-question">
+              <h3>{{ t(`faq.q${n}`) }}</h3>
+              <ChevronDownIcon class="faq-icon" />
+            </div>
+            <div class="faq-answer">
+              <p>{{ t(`faq.a${n}`) }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('location.title') }}</h2>
+        <p class="pricing-subtitle">{{ t('location.subtitle') }}</p>
+        
+        <div class="location-container">
+          <div class="location-info">
+            <div class="location-card glass-light">
+              <div class="flex items-center gap-4 mb-4">
+                <CarIcon size="32" class="text-accent" />
+                <h3 class="text-xl font-bold">{{ t('location.main_parking') }}</h3>
+              </div>
+              <p class="mb-6">{{ t('location.main_desc') }}</p>
+              
+              <h4 class="font-semibold mb-2">{{ t('location.other_parkings') }}</h4>
+              <p class="text-sm text-secondary">{{ t('location.list') }}</p>
+            </div>
+          </div>
+          
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.064560855217!2d5.882121376839178!3d43.10269387113184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c91ba7dcab5bc1%3A0x6b42b66236b281f!2sParking%20du%20Parc%20de%20la%20Navale!5e0!3m2!1sfr!2sfr!4v1715086745123!5m2!1sfr!2sfr" 
+              width="100%" 
+              height="100%" 
+              style="border:0; border-radius: 1.5rem;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact CTA Section -->
     <section id="contact" class="contact-cta">
       <div class="container">
@@ -201,11 +340,13 @@ import { useI18n } from 'vue-i18n'
 import { 
   AnchorIcon, MapPinIcon, CarIcon, UserIcon, CheckCircleIcon,
   SunIcon, UtensilsIcon, WavesIcon, MusicIcon, BedIcon, DropletIcon,
-  ShieldCheckIcon, PhoneIcon, MessageCircleIcon 
+  ShieldCheckIcon, PhoneIcon, MessageCircleIcon, PalmtreeIcon, MountainIcon, CompassIcon,
+  ChevronDownIcon
 } from 'lucide-vue-next'
 
 const { t, locale } = useI18n()
 const isScrolled = ref(false)
+const activeFaq = ref(null)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
@@ -213,6 +354,10 @@ const handleScroll = () => {
 
 const toggleLocale = () => {
   locale.value = locale.value === 'fr' ? 'en' : 'fr'
+}
+
+const toggleFaq = (n) => {
+  activeFaq.value = activeFaq.value === n ? null : n
 }
 
 onMounted(() => {
@@ -449,6 +594,7 @@ onUnmounted(() => {
 /* Sections */
 .section-light {
   background: var(--bg-color);
+  color: var(--text-primary);
 }
 
 .section-dark {
@@ -511,6 +657,55 @@ onUnmounted(() => {
 
 .feature p {
   color: rgba(255,255,255,0.8);
+}
+
+/* Itineraries */
+.itineraries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.itinerary-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.itinerary-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.itinerary-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 112, 243, 0.05);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: var(--transition);
+}
+
+.itinerary-card:hover .itinerary-icon {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.itinerary-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.itinerary-card p {
+  color: var(--text-secondary);
 }
 
 /* Pricing */
@@ -646,6 +841,231 @@ onUnmounted(() => {
   font-size: 1.1rem;
 }
 
+/* Steps Section */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.step-box {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 229, 255, 0.3);
+}
+
+.step-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.step-connector {
+  flex: 0.5;
+  height: 2px;
+  background: rgba(0, 112, 243, 0.2);
+  margin-top: 30px;
+}
+
+/* Testimonials Section */
+.testimonials-bg {
+  background: url('../assets/hero.png') center/cover fixed;
+  position: relative;
+}
+.testimonials-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(4, 30, 66, 0.9);
+}
+.testimonials-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.stars {
+  color: #FBBF24;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.review {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* FAQ Section */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.faq-icon {
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: var(--bg-color);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 0 2rem 1.5rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Location Section */
+.location-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.location-card {
+  padding: 3rem;
+  border-radius: 1.5rem;
+  height: 100%;
+}
+
+.glass-light {
+  background: white;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.95rem;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.map-container {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 400px;
+}
+
 /* Contact CTA */
 .contact-cta {
   background: url('../assets/hero.png') center/cover fixed;
@@ -720,7 +1140,8 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .skipper-container {
+  .skipper-container,
+  .location-container {
     grid-template-columns: 1fr;
   }
 }
@@ -744,6 +1165,20 @@ footer {
   
   .cta-box h2 {
     font-size: 2.5rem;
+  }
+  
+  .map-container {
+    min-height: 300px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .step-connector {
+    display: none;
   }
 }
 </style>

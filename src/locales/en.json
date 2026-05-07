@@ -38,6 +38,20 @@
     "cabin": "Spacious Cabin",
     "cabin_desc": "To take a nap, change clothes, or keep your belongings dry."
   },
+  "itineraries": {
+    "title": "Must-See Destinations",
+    "subtitle": "Departing from La Seyne-sur-Mer, everything is possible. Choose your vibe!",
+    "porquerolles": "Porquerolles & Turquoise Waters",
+    "porquerolles_desc": "Sail to Porquerolles Island (Notre-Dame beach, Argent beach). Anchor in lagoon-blue waters, perfect for a heavenly day.",
+    "sicie": "Cap Sicié & Les Deux Frères",
+    "sicie_desc": "Discover dizzying cliffs and the iconic Deux Frères rocks. An incredible spot for snorkeling with fish-rich seabeds.",
+    "embiez": "Embiez Island & Wild Coves",
+    "embiez_desc": "Paul Ricard's island offers a preserved and wild setting. Many small secluded coves await you for a peaceful anchorage.",
+    "giens": "Giens Peninsula",
+    "giens_desc": "Explore sea caves and steep cliffs on the south side of Giens. A spectacular landscape reserved for those arriving by sea.",
+    "mejean": "Méjean Coves & Cap Brun",
+    "mejean_desc": "Head towards Toulon and sail along the pine-fringed coast to discover the clear waters of Méjean cove and Cap Brun."
+  },
   "pricing": {
     "title": "Our Packages",
     "subtitle": "Net rates with Skipper included. NO DEPOSIT. (Fuel not included: refilled at the pump at the end of the day based on your consumption).",
@@ -54,6 +68,41 @@
     "sunset_desc": "Enjoy the sunset at sea. Ideal for drinks with friends or a romantic evening.",
     "sunset_price": "Upon request",
     "no_deposit": "NO DEPOSIT"
+  },
+  "steps": {
+    "title": "How it works?",
+    "step1": "1. Booking",
+    "step1_desc": "We chat on the phone to define the date, your desires, and the ideal package.",
+    "step2": "2. Boarding",
+    "step2_desc": "Meet at the port of La Seyne-sur-Mer. Just hop on board!",
+    "step3": "3. Getaway",
+    "step3_desc": "Relax. I take care of the navigation, you enjoy the sea."
+  },
+  "testimonials": {
+    "title": "They Loved It",
+    "review1": "A magical day! Thibault took us to a beautiful secret cove. The boat is super comfortable.",
+    "name1": "Marie & Julien",
+    "review2": "Great experience without the stress of a deposit or navigating. The huge sunbed is a real plus!",
+    "name2": "Sophie L.",
+    "review3": "Amazing sunset cruise facing Les Deux Frères. Highly recommended.",
+    "name3": "The Martin Family"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What happens if the weather is bad?",
+    "a1": "Safety first! In case of rough seas or strong winds, the trip is rescheduled or canceled free of charge.",
+    "q2": "Can we bring our own food and alcohol?",
+    "a2": "Of course! A cooler is available on board, and the rear dining area is perfect for eating.",
+    "q3": "Are babies and children allowed?",
+    "a3": "Yes, the navigation adapts to stay very calm and safe for the little ones."
+  },
+  "location": {
+    "title": "Access & Parking",
+    "subtitle": "An easy departure in the heart of La Seyne-sur-Mer",
+    "main_parking": "Preferred Parking: Parking du Parc de la Navale",
+    "main_desc": "Ideally located just a 1-minute walk from our meeting point, featuring EV charging stations.",
+    "other_parkings": "Other nearby parking options:",
+    "list": "Parking : 1, 83500 La Seyne-sur-Mer, Parking Port de La Seyne-sur-Mer, Parking Quai de la Marine, Parking Port de la Rade de Toulon, Entrée parking Salle des Mariages, Parking des Esplageolles."
   },
   "contact": {
     "title": "Ready to drop anchor?",

@@ -38,6 +38,20 @@
     "cabin": "Cabine Spacieuse",
     "cabin_desc": "Pour faire une sieste, se changer, ou garder vos affaires au sec."
   },
+  "itineraries": {
+    "title": "Destinations Incontournables",
+    "subtitle": "Au départ de La Seyne-sur-Mer, tout est possible. Choisissez votre ambiance !",
+    "porquerolles": "Porquerolles & Eaux Turquoises",
+    "porquerolles_desc": "Naviguez vers l'île de Porquerolles (Plage Notre-Dame, Plage d'Argent). Mouillez dans des eaux d'un bleu lagon, parfait pour une journée paradisiaque.",
+    "sicie": "Cap Sicié & Les Deux Frères",
+    "sicie_desc": "Découvrez des falaises vertigineuses et l'emblématique rocher des Deux Frères. Un spot incroyable pour le snorkeling avec des fonds riches en poissons.",
+    "embiez": "Île des Embiez & Criques Sauvages",
+    "embiez_desc": "L'île Paul Ricard offre un cadre préservé et sauvage. De nombreuses petites criques isolées vous attendent pour un mouillage en toute tranquillité.",
+    "giens": "Presqu'île de Giens",
+    "giens_desc": "Explorez des grottes marines et des falaises abruptes côté sud de Giens. Un paysage spectaculaire réservé à ceux qui viennent par la mer.",
+    "mejean": "Calanques de Méjean & Cap Brun",
+    "mejean_desc": "Mettez le cap vers Toulon et longez la côte bordée de pins parasols pour découvrir les eaux claires de l'anse de Méjean et du Cap Brun."
+  },
   "pricing": {
     "title": "Nos Formules",
     "subtitle": "Tarifs nets avec Skipper inclus. ZÉRO CAUTION. (Essence non comprise : le plein est fait à la pompe en fin de journée selon votre consommation).",
@@ -54,6 +68,41 @@
     "sunset_desc": "Profitez du coucher de soleil en mer. Idéal pour un apéro entre amis ou en amoureux.",
     "sunset_price": "Sur devis",
     "no_deposit": "SANS CAUTION"
+  },
+  "steps": {
+    "title": "Comment ça se passe ?",
+    "step1": "1. Réservation",
+    "step1_desc": "On s'appelle pour définir la date, vos envies et la formule idéale.",
+    "step2": "2. Embarquement",
+    "step2_desc": "Rendez-vous au port de la Seyne-sur-Mer. Vous n'avez qu'à monter à bord !",
+    "step3": "3. Évasion",
+    "step3_desc": "Détendez-vous. Je m'occupe de la navigation, vous profitez de la mer."
+  },
+  "testimonials": {
+    "title": "Ils ont adoré",
+    "review1": "Une journée magique ! Thibault nous a emmenés dans une crique secrète magnifique. Le bateau est ultra confortable.",
+    "name1": "Marie & Julien",
+    "review2": "Super expérience sans le stress de la caution ou de la navigation. Le grand bain de soleil est un vrai plus !",
+    "name2": "Sophie L.",
+    "review3": "Apéro sunset au top face aux Deux Frères. On recommande les yeux fermés.",
+    "name3": "Famille Martin"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "q1": "Que se passe-t-il en cas de mauvaise météo ?",
+    "a1": "La sécurité avant tout ! En cas de mer agitée ou vent fort, la sortie est décalée ou annulée sans frais.",
+    "q2": "Peut-on ramener notre repas et notre alcool ?",
+    "a2": "Bien sûr ! Une glacière est à votre disposition sur le bateau et le carré arrière est parfait pour manger.",
+    "q3": "Les bébés et enfants sont-ils acceptés ?",
+    "a3": "Oui, la navigation s'adapte pour que ça reste très calme et sécurisé pour les plus petits."
+  },
+  "location": {
+    "title": "Accès & Parkings",
+    "subtitle": "Un départ facile au cœur de La Seyne-sur-Mer",
+    "main_parking": "Parking privilégié : Parking du Parc de la Navale",
+    "main_desc": "Idéalement situé à 1 minute à pied de notre point de rendez-vous, avec des bornes de recharge pour véhicules électriques.",
+    "other_parkings": "Autres parkings à proximité :",
+    "list": "Parking : 1, 83500 La Seyne-sur-Mer, Parking Port de La Seyne-sur-Mer, Parking Quai de la Marine, Parking Port de la Rade de Toulon, Entrée parking Salle des Mariages, Parking des Esplageolles."
   },
   "contact": {
     "title": "Prêt à jeter l'ancre ?",
