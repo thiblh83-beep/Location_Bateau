@@ -17,15 +17,19 @@
   "skipper": {
     "title": "Sail with peace of mind",
     "subtitle": "Your Skipper: Thibault",
-    "desc1": "Passionate about the sea since childhood and a true local, I know the Var coast perfectly, from the crystal clear waters of Porquerolles to the secret coves of the Giens Peninsula.",
-    "desc2": "My goal? To offer you an unforgettable and safe day. Whether you're looking for a quiet anchorage to relax or the best snorkeling spots, let me guide you!",
+    "desc1": "Hi, I'm Thibault! I've been sailing in this area since I was a kid. Porquerolles, Giens, Les Deux Frères... I know the coast inside out and I'll take you to the best spots.",
+    "desc2": "The idea for the day is simple: you set the pace. Whether it's swimming, relaxing, or exploring, my only goal is to make sure you have an amazing time on the water without worrying about navigating.",
     "bullet1": "Zero stress: no deposit, no material responsibility",
     "bullet2": "Total flexibility on your itinerary",
-    "bullet3": "Expert knowledge of the best spots"
+    "bullet3": "Knowledge of the quietest coves"
   },
   "features": {
-    "title": "Features & Extras",
-    "sunbed": "Huge Sunbed",
+    "title": "The Boat: Cap Camarat 7.15",
+    "boat_desc": "Step aboard a spacious 7.20-meter vessel, renowned for its excellent seaworthiness. Designed for comfort, it can accommodate up to 6 passengers (plus the skipper) ensuring everyone has their own space.",
+    "stat_length": "7.20 m",
+    "stat_capacity": "6 People Max",
+    "stat_engine": "250 HP Engine",
+    "sunbed": "Large Sunbed",
     "sunbed_desc": "At the front of the boat, the perfect space to sunbathe comfortably.",
     "dining": "Shaded Dining Area",
     "dining_desc": "Eat in the shade thanks to the large sun awning. Bring your picnic!",
@@ -76,7 +80,7 @@
     "step2": "2. Boarding",
     "step2_desc": "Meet at the port of La Seyne-sur-Mer. Just hop on board!",
     "step3": "3. Getaway",
-    "step3_desc": "Relax. I take care of the navigation, you enjoy the sea."
+    "step3_desc": "Relax. I take care of the navigation, you enjoy the sea, the sun, and swimming."
   },
   "testimonials": {
     "title": "They Loved It",
@@ -93,8 +97,14 @@
     "a1": "Safety first! In case of rough seas or strong winds, the trip is rescheduled or canceled free of charge.",
     "q2": "Can we bring our own food and alcohol?",
     "a2": "Of course! A cooler is available on board, and the rear dining area is perfect for eating.",
-    "q3": "Are babies and children allowed?",
-    "a3": "Yes, the navigation adapts to stay very calm and safe for the little ones."
+    "q3": "How do we pay for the fuel?",
+    "a3": "Fuel is not included in the initial price. At the end of the day, we stop at the port station and you only pay for what we consumed.",
+    "q4": "Are babies and toddlers allowed?",
+    "a4": "Yes, the navigation adapts to stay very calm and safe for the little ones.",
+    "q5": "Can we choose our own itinerary?",
+    "a5": "Absolutely! The itinerary is flexible. You tell me what you like (sandy beaches, wild coves, snorkeling) and I'll take you there.",
+    "q6": "Is there a toilet on board?",
+    "a6": "The boat has a spacious cabin to change clothes in private, but there are no real toilets on board (a freshwater shower is available on deck)."
   },
   "location": {
     "title": "Access & Parking",

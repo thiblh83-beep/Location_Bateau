@@ -5,7 +5,7 @@
       <div class="container nav-content">
         <div class="logo">
           <AnchorIcon class="logo-icon" />
-          <span>LocBateau</span>
+          <span>LocBoat</span>
         </div>
         <div class="nav-links">
           <a href="#skipper">{{ t('nav.skipper') }}</a>
@@ -64,10 +64,26 @@
       </div>
     </section>
 
-    <!-- Features -->
+    <!-- Features & Boat Stats -->
     <section id="features" class="section-dark">
       <div class="container">
         <h2 class="section-title text-white">{{ t('features.title') }}</h2>
+        <p class="text-center text-white opacity-80 max-w-2xl mx-auto mb-8 text-lg">
+          {{ t('features.boat_desc') }}
+        </p>
+        
+        <div class="boat-stats-container mb-12">
+          <div class="stat-badge glass-dark">
+            <span class="font-bold">{{ t('features.stat_length') }}</span>
+          </div>
+          <div class="stat-badge glass-dark">
+            <span class="font-bold">{{ t('features.stat_capacity') }}</span>
+          </div>
+          <div class="stat-badge glass-dark">
+            <span class="font-bold">{{ t('features.stat_engine') }}</span>
+          </div>
+        </div>
+
         <div class="features-grid">
           <div class="feature glass-dark">
             <div class="icon-wrapper"><SunIcon /></div>
@@ -109,16 +125,28 @@
         <h2 class="section-title">{{ t('itineraries.title') }}</h2>
         <p class="pricing-subtitle">{{ t('itineraries.subtitle') }}</p>
         
+        <!-- Local / Eco -->
+        <h3 class="itinerary-category-title mt-8 mb-6 text-2xl font-bold text-accent text-center">{{ t('itineraries.eco_title') }}</h3>
+        <div class="itineraries-grid mb-12">
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><MountainIcon size="32" /></div>
+            <h3>{{ t('itineraries.sicie') }}</h3>
+            <p>{{ t('itineraries.sicie_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><MapPinIcon size="32" /></div>
+            <h3>{{ t('itineraries.mejean') }}</h3>
+            <p>{{ t('itineraries.mejean_desc') }}</p>
+          </div>
+        </div>
+
+        <!-- Exploration -->
+        <h3 class="itinerary-category-title mt-8 mb-6 text-2xl font-bold text-accent text-center">{{ t('itineraries.explo_title') }}</h3>
         <div class="itineraries-grid">
           <div class="itinerary-card">
             <div class="itinerary-icon"><PalmtreeIcon size="32" /></div>
             <h3>{{ t('itineraries.porquerolles') }}</h3>
             <p>{{ t('itineraries.porquerolles_desc') }}</p>
-          </div>
-          <div class="itinerary-card">
-            <div class="itinerary-icon"><MountainIcon size="32" /></div>
-            <h3>{{ t('itineraries.sicie') }}</h3>
-            <p>{{ t('itineraries.sicie_desc') }}</p>
           </div>
           <div class="itinerary-card">
             <div class="itinerary-icon"><AnchorIcon size="32" /></div>
@@ -130,11 +158,6 @@
             <h3>{{ t('itineraries.giens') }}</h3>
             <p>{{ t('itineraries.giens_desc') }}</p>
           </div>
-          <div class="itinerary-card">
-            <div class="itinerary-icon"><MapPinIcon size="32" /></div>
-            <h3>{{ t('itineraries.mejean') }}</h3>
-            <p>{{ t('itineraries.mejean_desc') }}</p>
-          </div>
         </div>
       </div>
     </section>
@@ -142,12 +165,12 @@
     <!-- Pricing Section -->
     <section id="pricing" class="section-dark">
       <div class="container">
-        <h2 class="section-title">{{ t('pricing.title') }}</h2>
-        <p class="pricing-subtitle">{{ t('pricing.subtitle') }}</p>
+        <h2 class="section-title text-white">{{ t('pricing.title') }}</h2>
+        <p class="pricing-subtitle text-white-opacity">{{ t('pricing.subtitle') }}</p>
         
         <div class="pricing-cards">
           <!-- Half Day -->
-          <div class="pricing-card">
+          <div class="pricing-card dark-card-text">
             <div class="card-header">
               <h3>{{ t('pricing.half_day') }}</h3>
               <p>{{ t('pricing.half_day_time') }}</p>
@@ -169,24 +192,24 @@
           <div class="pricing-card featured">
             <div class="popular-tag">Idéal</div>
             <div class="card-header">
-              <h3>{{ t('pricing.full_day') }}</h3>
-              <p>{{ t('pricing.full_day_time') }}</p>
+              <h3 class="text-white">{{ t('pricing.full_day') }}</h3>
+              <p class="text-white opacity-80">{{ t('pricing.full_day_time') }}</p>
             </div>
             <div class="card-body">
               <div class="price-row">
-                <span class="price">{{ t('pricing.full_day_high') }}</span>
+                <span class="price text-white">{{ t('pricing.full_day_high') }}</span>
               </div>
               <div class="price-row">
-                <span class="price-low">{{ t('pricing.full_day_low') }}</span>
+                <span class="price-low text-white opacity-80">{{ t('pricing.full_day_low') }}</span>
               </div>
             </div>
             <div class="card-footer">
-              <span class="no-deposit"><ShieldCheckIcon size="16"/> {{ t('pricing.no_deposit') }}</span>
+              <span class="no-deposit text-white"><ShieldCheckIcon size="16"/> {{ t('pricing.no_deposit') }}</span>
             </div>
           </div>
 
           <!-- Sunset -->
-          <div class="pricing-card sunset-card">
+          <div class="pricing-card sunset-card dark-card-text">
             <div class="card-header">
               <h3>{{ t('pricing.sunset') }}</h3>
               <p>{{ t('pricing.sunset_time') }}</p>
@@ -198,7 +221,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <a href="tel:+33612345678" class="btn btn-secondary w-full">Sur mesure</a>
+              <a href="tel:+33612345678" class="btn btn-secondary w-full" style="color: white; background: #FF7F50; border: none;">Sur mesure</a>
             </div>
           </div>
         </div>
@@ -260,7 +283,7 @@
       <div class="container">
         <h2 class="section-title">{{ t('faq.title') }}</h2>
         <div class="faq-container">
-          <div class="faq-item" v-for="n in 3" :key="n" @click="toggleFaq(n)" :class="{ active: activeFaq === n }">
+          <div class="faq-item" v-for="n in 6" :key="n" @click="toggleFaq(n)" :class="{ active: activeFaq === n }">
             <div class="faq-question">
               <h3>{{ t(`faq.q${n}`) }}</h3>
               <ChevronDownIcon class="faq-icon" />
@@ -328,7 +351,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2026 LocBateau - Thibault. {{ t('footer.rights') }}</p>
+        <p>&copy; 2026 LocBoat - Thibault. {{ t('footer.rights') }}</p>
       </div>
     </footer>
   </div>
@@ -447,8 +470,11 @@ onUnmounted(() => {
 }
 
 .nav-btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 0.9rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 112, 243, 0.4);
+  animation: pulse-glow 2s infinite;
 }
 
 /* Hero Section */
@@ -604,6 +630,22 @@ onUnmounted(() => {
 
 .text-white {
   color: white !important;
+}
+
+.text-white-opacity {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-card-text {
+  color: var(--text-primary) !important;
+}
+
+.dark-card-text h3, .dark-card-text .price, .dark-card-text p {
+  color: var(--text-primary) !important;
+}
+
+.dark-card-text .price-low, .dark-card-text .pricing-subtitle {
+  color: var(--text-secondary) !important;
 }
 
 /* Features */

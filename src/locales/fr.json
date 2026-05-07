@@ -17,15 +17,19 @@
   "skipper": {
     "title": "Naviguez l'esprit tranquille",
     "subtitle": "Votre Skipper : Thibault",
-    "desc1": "Passionné par la mer depuis mon plus jeune âge et véritable enfant de la région, je connais parfaitement les côtes varoises, des eaux cristallines de Porquerolles aux criques secrètes de la Presqu'île de Giens.",
-    "desc2": "Mon objectif ? Vous offrir une journée inoubliable, en toute sécurité. Que vous cherchiez un mouillage calme pour vous détendre ou les meilleurs spots de snorkeling, laissez-vous guider !",
+    "desc1": "Bonjour, je m'appelle Thibault ! Je navigue dans la région depuis mon enfance. Porquerolles, Giens, les Deux Frères... je connais le coin par cœur et je vous emmènerai dans les meilleurs spots.",
+    "desc2": "Le principe de la journée est simple : c'est vous qui décidez du rythme. Baignade, farniente ou balade, mon seul but est de vous faire passer une super journée sur l'eau, sans que vous n'ayez à vous soucier de la navigation.",
     "bullet1": "Zéro stress : ni caution, ni responsabilité matérielle",
     "bullet2": "Flexibilité totale sur votre itinéraire",
-    "bullet3": "Connaissance experte des meilleurs spots"
+    "bullet3": "Connaissance des criques les plus tranquilles"
   },
   "features": {
-    "title": "Équipements & Petits Plus",
-    "sunbed": "Immense Bain de Soleil",
+    "title": "Le Bateau : Cap Camarat 7.15",
+    "boat_desc": "Embarquez sur une unité spacieuse de 7,20 mètres, réputée pour son excellente tenue en mer. Conçu pour le confort, il peut accueillir jusqu'à 6 passagers (en plus du skipper) pour garantir à chacun un espace privilégié.",
+    "stat_length": "7,20 m",
+    "stat_capacity": "6 Personnes Max",
+    "stat_engine": "Moteur 250 CV",
+    "sunbed": "Grand Bain de Soleil",
     "sunbed_desc": "À l'avant du bateau, l'espace parfait pour bronzer confortablement.",
     "dining": "Carré Arrière Ombragé",
     "dining_desc": "Mangez à l'ombre grâce au grand taud de soleil. Emmenez votre pique-nique !",
@@ -39,8 +43,10 @@
     "cabin_desc": "Pour faire une sieste, se changer, ou garder vos affaires au sec."
   },
   "itineraries": {
-    "title": "Destinations Incontournables",
-    "subtitle": "Au départ de La Seyne-sur-Mer, tout est possible. Choisissez votre ambiance !",
+    "title": "Destinations à la Carte",
+    "subtitle": "Choisissez votre ambiance ! L'essence n'étant pas comprise, voici deux types de sorties :",
+    "eco_title": "Évasion Locale (Plus Économique)",
+    "explo_title": "Grandes Explorations",
     "porquerolles": "Porquerolles & Eaux Turquoises",
     "porquerolles_desc": "Naviguez vers l'île de Porquerolles (Plage Notre-Dame, Plage d'Argent). Mouillez dans des eaux d'un bleu lagon, parfait pour une journée paradisiaque.",
     "sicie": "Cap Sicié & Les Deux Frères",
@@ -76,7 +82,7 @@
     "step2": "2. Embarquement",
     "step2_desc": "Rendez-vous au port de la Seyne-sur-Mer. Vous n'avez qu'à monter à bord !",
     "step3": "3. Évasion",
-    "step3_desc": "Détendez-vous. Je m'occupe de la navigation, vous profitez de la mer."
+    "step3_desc": "Détendez-vous. Je m'occupe de la navigation, vous profitez de la mer, du soleil et de la baignade."
   },
   "testimonials": {
     "title": "Ils ont adoré",
@@ -93,8 +99,14 @@
     "a1": "La sécurité avant tout ! En cas de mer agitée ou vent fort, la sortie est décalée ou annulée sans frais.",
     "q2": "Peut-on ramener notre repas et notre alcool ?",
     "a2": "Bien sûr ! Une glacière est à votre disposition sur le bateau et le carré arrière est parfait pour manger.",
-    "q3": "Les bébés et enfants sont-ils acceptés ?",
-    "a3": "Oui, la navigation s'adapte pour que ça reste très calme et sécurisé pour les plus petits."
+    "q3": "Comment se passe le paiement de l'essence ?",
+    "a3": "L'essence n'est pas comprise dans le tarif initial. En fin de journée, nous passons à la station du port et vous réglez uniquement ce que nous avons consommé.",
+    "q4": "Les bébés et enfants en bas âge sont-ils acceptés ?",
+    "a4": "Oui, la navigation s'adapte pour que ça reste très calme et sécurisé pour les plus petits.",
+    "q5": "Pouvons-nous choisir notre propre itinéraire ?",
+    "a5": "Absolument ! L'itinéraire est flexible. Vous me dites ce que vous aimez (plages de sable, criques sauvages, snorkeling) et je vous y emmène.",
+    "q6": "Y a-t-il des toilettes à bord ?",
+    "a6": "Le bateau dispose d'une cabine spacieuse pour se changer en toute intimité, mais il n'y a pas de vraies toilettes à bord (douchette d'eau douce disponible sur le pont)."
   },
   "location": {
     "title": "Accès & Parkings",
