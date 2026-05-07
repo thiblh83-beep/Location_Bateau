@@ -73,14 +73,26 @@
         </p>
         
         <div class="boat-stats-container">
-          <div class="stat-badge">
-            <span>{{ t('features.stat_length') }}</span>
+          <div class="stat-card glass-dark">
+            <div class="stat-icon"><AnchorIcon size="28" /></div>
+            <div class="stat-info">
+              <span class="stat-value">{{ t('features.stat_length_val') }}</span>
+              <span class="stat-label">{{ t('features.stat_length_lbl') }}</span>
+            </div>
           </div>
-          <div class="stat-badge">
-            <span>{{ t('features.stat_capacity') }}</span>
+          <div class="stat-card glass-dark">
+            <div class="stat-icon"><UserIcon size="28" /></div>
+            <div class="stat-info">
+              <span class="stat-value">{{ t('features.stat_cap_val') }}</span>
+              <span class="stat-label">{{ t('features.stat_cap_lbl') }}</span>
+            </div>
           </div>
-          <div class="stat-badge">
-            <span>{{ t('features.stat_engine') }}</span>
+          <div class="stat-card glass-dark">
+            <div class="stat-icon"><WavesIcon size="28" /></div>
+            <div class="stat-info">
+              <span class="stat-value">{{ t('features.stat_eng_val') }}</span>
+              <span class="stat-label">{{ t('features.stat_eng_lbl') }}</span>
+            </div>
           </div>
         </div>
 
@@ -361,6 +373,9 @@
             <a href="https://wa.me/33612345678" target="_blank" class="btn btn-whatsapp">
               <MessageCircleIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.whatsapp') }}
             </a>
+            <a href="mailto:LocBoat83@outlook.com" class="btn btn-secondary" style="width: 100%; max-width: 500px; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">
+              <MailIcon size="24" style="margin-right: 0.5rem;" /> LocBoat83@outlook.com
+            </a>
           </div>
         </div>
       </div>
@@ -370,7 +385,7 @@
     <section class="section-dark" style="padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.1);">
       <div class="container" style="text-align: center;">
         <h3 style="color: white; margin-bottom: 2rem; font-size: 1.8rem; font-weight: 700;">{{ t('social.follow') }}</h3>
-        <a href="https://instagram.com" target="_blank" class="btn btn-secondary social-btn">
+        <a href="https://www.instagram.com/locboat83/" target="_blank" class="btn btn-secondary social-btn">
           <InstagramIcon size="24" /> {{ t('social.insta_btn') }}
         </a>
       </div>
@@ -405,7 +420,7 @@ import {
   AnchorIcon, MapPinIcon, CarIcon, UserIcon, CheckCircleIcon,
   SunIcon, UtensilsIcon, WavesIcon, MusicIcon, BedIcon, DropletIcon,
   ShieldCheckIcon, PhoneIcon, MessageCircleIcon, PalmtreeIcon, MountainIcon, CompassIcon,
-  ChevronDownIcon, CameraIcon, InstagramIcon
+  ChevronDownIcon, CameraIcon, InstagramIcon, MailIcon
 } from 'lucide-vue-next'
 
 const { t, locale } = useI18n()
@@ -688,6 +703,67 @@ onUnmounted(() => {
 
 .dark-card-text .price-low, .dark-card-text .pricing-subtitle {
   color: var(--text-secondary) !important;
+}
+
+.boat-desc {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.boat-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  border-color: rgba(0, 229, 255, 0.4);
+}
+
+.stat-icon {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Features */
