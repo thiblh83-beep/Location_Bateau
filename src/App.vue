@@ -904,6 +904,14 @@ onUnmounted(() => {
   gap: 2rem;
 }
 
+.itinerary-category-title {
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: 800;
+  margin: 3rem 0 1rem;
+  font-family: var(--font-heading);
+}
+
 .itinerary-card {
   background: white;
   border-radius: 1.5rem;
@@ -911,6 +919,18 @@ onUnmounted(() => {
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   text-align: center;
+  border: 1px solid rgba(10, 37, 64, 0.05);
+}
+
+.itinerary-card--custom {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px dashed var(--secondary-color) !important;
+  box-shadow: 0 10px 25px rgba(0, 180, 216, 0.15);
+}
+
+.itinerary-card--custom .itinerary-icon {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .itinerary-card:hover {
@@ -1363,6 +1383,8 @@ onUnmounted(() => {
 .location-list {
   font-size: 0.95rem;
   color: var(--text-secondary);
+  white-space: pre-line;
+  line-height: 1.6;
 }
 
 .map-container {

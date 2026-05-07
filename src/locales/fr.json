@@ -49,7 +49,7 @@
   },
   "itineraries": {
     "title": "Destinations à la Carte",
-    "subtitle": "Choisissez votre ambiance !\n L'essence n'étant pas comprise, voici deux types de sorties :",
+    "subtitle": "Choisissez votre ambiance !\n Voici deux types de sorties :",
     "eco_title": "Évasion Locale (Plus Économique)",
     "explo_title": "Grandes Explorations",
     "porquerolles": "Porquerolles & Eaux Turquoises",
@@ -65,7 +65,9 @@
     "carqueiranne": "Carqueiranne & Ses Criques",
     "carqueiranne_desc": "⏱ 30 min de navigation - Village côtier authentique avec de superbes criques rocheuses. Eaux cristallines idéales pour la baignade et le snorkeling dans un cadre préservé.",
     "sanpeyre": "Anse de San Peyre",
-    "sanpeyre_desc": "⏱ 25 min de navigation - Une anse sauvage et peu fréquentée, nichée entre les falaises. Parfaite pour un mouillage calme et une baignade tranquille loin de l'agitation."
+    "sanpeyre_desc": "⏱ 25 min de navigation - Une anse sauvage et peu fréquentée, nichée entre les falaises. Parfaite pour un mouillage calme et une baignade tranquille loin de l'agitation.",
+    "custom": "Où bon vous semble ✨",
+    "custom_desc": "Envie d'une destination précise ? Dites-le moi ! On crée votre itinéraire idéal sur mesure selon vos envies et la météo du jour. Liberté totale !"
   },
   "pricing": {
     "title": "Nos Formules",
@@ -123,7 +125,7 @@
     "main_parking": "Parking privilégié : Parking du Parc de la Navale",
     "main_desc": "Idéalement situé à 1 minute à pied de notre point de rendez-vous, avec des bornes de recharge pour véhicules électriques.",
     "other_parkings": "Autres parkings à proximité :",
-    "list": "Parking : 1, 83500 La Seyne-sur-Mer, Parking Port de La Seyne-sur-Mer, Parking Quai de la Marine, Parking Port de la Rade de Toulon, Entrée parking Salle des Mariages, Parking des Esplageolles."
+    "list": "• Parking Port de La Seyne-sur-Mer\n• Parking Quai de la Marine\n• Parking Port de la Rade de Toulon\n• Entrée parking Salle des Mariages\n• Parking des Esplageolles"
   },
   "contact": {
     "title": "Prêt à jeter l'ancre ?",

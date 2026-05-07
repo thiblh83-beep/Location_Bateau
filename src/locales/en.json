@@ -51,15 +51,17 @@
     "title": "Must-See Destinations",
     "subtitle": "Departing from La Seyne-sur-Mer, everything is possible. Choose your vibe!",
     "porquerolles": "Porquerolles & Turquoise Waters",
-    "porquerolles_desc": "Sail to Porquerolles Island (Notre-Dame beach, Argent beach). Anchor in lagoon-blue waters, perfect for a heavenly day.",
+    "porquerolles_desc": "⏱ 1h navigation - Sail to Porquerolles Island (Notre-Dame beach, Argent beach). Anchor in lagoon-blue waters, perfect for a heavenly day.",
     "sicie": "Cap Sicié & Les Deux Frères",
-    "sicie_desc": "Discover dizzying cliffs and the iconic Deux Frères rocks. An incredible spot for snorkeling with fish-rich seabeds.",
+    "sicie_desc": "⏱ 30 min navigation - Discover dizzying cliffs and the iconic Deux Frères rocks. An incredible spot for snorkeling with fish-rich seabeds.",
     "embiez": "Embiez Island & Wild Coves",
-    "embiez_desc": "Paul Ricard's island offers a preserved and wild setting. Many small secluded coves await you for a peaceful anchorage.",
+    "embiez_desc": "⏱ 1h navigation - Paul Ricard's island offers a preserved and wild setting. Many small secluded coves await you for a peaceful anchorage.",
     "giens": "Giens Peninsula",
-    "giens_desc": "Explore sea caves and steep cliffs on the south side of Giens. A spectacular landscape reserved for those arriving by sea.",
+    "giens_desc": "⏱ 40 min navigation - Explore sea caves and steep cliffs on the south side of Giens. A spectacular landscape reserved for those arriving by sea.",
     "mejean": "Méjean Coves & Cap Brun",
-    "mejean_desc": "Head towards Toulon and sail along the pine-fringed coast to discover the clear waters of Méjean cove and Cap Brun."
+    "mejean_desc": "⏱ 20 min navigation - Head towards Toulon and sail along the pine-fringed coast to discover the clear waters of Méjean cove and Cap Brun.",
+    "custom": "Wherever you want ✨",
+    "custom_desc": "Have a specific destination in mind? Let me know! We create your ideal tailor-made itinerary based on your wishes and the day's weather. Total freedom!"
   },
   "pricing": {
     "title": "Our Packages",
