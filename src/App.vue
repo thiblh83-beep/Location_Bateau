@@ -25,6 +25,9 @@
           <button class="lang-switch" @click="toggleLocale">
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </button>
+          <a href="https://www.instagram.com/locboat83/" target="_blank" class="nav-insta-btn" title="Instagram">
+            <InstagramIcon size="22" />
+          </a>
           <a href="tel:+33635407550" class="btn btn-primary nav-btn">{{ t('nav.book') }}</a>
         </div>
       </div>
@@ -161,6 +164,16 @@
             <div class="itinerary-icon"><MapPinIcon size="32" /></div>
             <h3>{{ t('itineraries.mejean') }}</h3>
             <p>{{ t('itineraries.mejean_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><WavesIcon size="32" /></div>
+            <h3>{{ t('itineraries.carqueiranne') }}</h3>
+            <p>{{ t('itineraries.carqueiranne_desc') }}</p>
+          </div>
+          <div class="itinerary-card">
+            <div class="itinerary-icon"><SunIcon size="32" /></div>
+            <h3>{{ t('itineraries.sanpeyre') }}</h3>
+            <p>{{ t('itineraries.sanpeyre_desc') }}</p>
           </div>
         </div>
 
@@ -576,6 +589,24 @@ onUnmounted(() => {
   animation: pulse-glow 2s infinite;
 }
 
+.nav-insta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.nav-insta-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -917,6 +948,7 @@ onUnmounted(() => {
   margin: 0 auto 4rem;
   color: var(--text-secondary);
   font-size: 1.15rem;
+  white-space: pre-line;
 }
 
 .pricing-cards {
@@ -1102,8 +1134,14 @@ onUnmounted(() => {
 }
 
 .step-box h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.step-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
 }
 
 .step-connector {
@@ -1187,13 +1225,16 @@ onUnmounted(() => {
 }
 
 .faq-question h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
   color: var(--text-primary);
+  font-weight: 700;
 }
 
 .faq-icon {
   color: var(--accent-color);
+  flex-shrink: 0;
+  margin-left: 1rem;
   transition: transform 0.3s ease;
 }
 
@@ -1204,18 +1245,21 @@ onUnmounted(() => {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.4s ease;
   background: var(--bg-color);
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 300px;
 }
 
 .faq-answer p {
-  padding: 0 2rem 1.5rem;
+  padding: 1rem 2rem 1.8rem;
   color: var(--text-secondary);
   margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  border-top: 1px solid rgba(10,37,64,0.07);
 }
 
 /* Location Section */
