@@ -1089,15 +1089,16 @@ onUnmounted(() => {
 .card-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #10B981;
-  border: 1px solid #10B98130;
-  background: #10B98108;
-  padding: 0.4rem 0.9rem;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #059669;
+  border: 2px solid #10B98150;
+  background: #10B98115;
+  padding: 0.5rem 1.1rem;
   border-radius: 99px;
   align-self: flex-start;
+  letter-spacing: 0.5px;
 }
 
 /* Steps Section */
