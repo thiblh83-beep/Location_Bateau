@@ -27,6 +27,7 @@
         <div :class="['nav-links', { 'active': isMenuOpen }]">
           <a href="#skipper" @click="isMenuOpen = false">{{ t('nav.skipper') }}</a>
           <a href="#features" @click="isMenuOpen = false">{{ t('nav.boat') }}</a>
+          <a href="#why" @click="isMenuOpen = false">{{ t('nav.why') }}</a>
           <a href="#pricing" @click="isMenuOpen = false">{{ t('nav.pricing') }}</a>
           <a href="#gallery" @click="isMenuOpen = false">{{ t('nav.gallery') }}</a>
           <button class="lang-switch" @click="toggleLocale">
@@ -78,10 +79,57 @@
             </ul>
           </div>
           <div class="skipper-image-wrapper">
-            <!-- Placeholder for Skipper Image -->
-            <div class="glass skipper-placeholder">
-              <UserIcon size="80" class="text-primary opacity-50" />
-              <p>Photo de Thibault à venir</p>
+            <div class="skipper-image-card">
+              <img src="./assets/skipper.png" alt="Thibault - Votre Skipper" class="skipper-img" />
+              <div class="skipper-badge">Capitaine Thibault</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Section -->
+    <section id="why" class="section-light" style="padding-top: 0;">
+      <div class="container">
+        <div class="glass why-card">
+          <h2 class="section-title">{{ t('why.title') }}</h2>
+          <p class="pricing-subtitle" style="margin-bottom: 3rem;">{{ t('why.subtitle') }}</p>
+          
+          <div class="why-grid">
+            <div class="why-item">
+              <div class="why-icon-box stress"><ShieldCheckIcon size="32" /></div>
+              <div class="why-text">
+                <h3>{{ t('why.stress') }}</h3>
+                <p>{{ t('why.stress_desc') }}</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-box parking"><CarIcon size="32" /></div>
+              <div class="why-text">
+                <h3>{{ t('why.parking') }}</h3>
+                <p>{{ t('why.parking_desc') }}</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-box comfort"><AnchorIcon size="32" /></div>
+              <div class="why-text">
+                <h3>{{ t('why.comfort') }}</h3>
+                <p>{{ t('why.comfort_desc') }}</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-box dining"><UtensilsIcon size="32" /></div>
+              <div class="why-text">
+                <h3>{{ t('why.dining') }}</h3>
+                <p>{{ t('why.dining_desc') }}</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-box fun"><WavesIcon size="32" /></div>
+              <div class="why-text">
+                <h3>{{ t('why.fun') }}</h3>
+                <p>{{ t('why.fun_desc') }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,6 +202,37 @@
         </div>
       </div>
     </section>
+    
+    <!-- Included Section -->
+    <section id="included" class="section-light">
+      <div class="container">
+        <h2 class="section-title">{{ t('included.title') }}</h2>
+        <p class="pricing-subtitle">{{ t('included.subtitle') }}</p>
+        
+        <div class="included-grid">
+          <div class="included-card glass">
+            <div class="included-icon-box"><CoffeeIcon size="28" /></div>
+            <h3>{{ t('included.drinks') }}</h3>
+            <p>{{ t('included.drinks_desc') }}</p>
+          </div>
+          <div class="included-card glass">
+            <div class="included-icon-box"><WavesIcon size="28" /></div>
+            <h3>{{ t('included.gear') }}</h3>
+            <p>{{ t('included.gear_desc') }}</p>
+          </div>
+          <div class="included-card glass">
+            <div class="included-icon-box"><UsbIcon size="28" /></div>
+            <h3>{{ t('included.energy') }}</h3>
+            <p>{{ t('included.energy_desc') }}</p>
+          </div>
+          <div class="included-card glass">
+            <div class="included-icon-box"><LifeBuoyIcon size="28" /></div>
+            <h3>{{ t('included.safety') }}</h3>
+            <p>{{ t('included.safety_desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Itineraries -->
     <section id="itineraries" class="section-light">
@@ -210,6 +289,45 @@
             <div class="itinerary-icon"><CompassIcon size="32" /></div>
             <h3>{{ t('itineraries.giens') }}</h3>
             <p>{{ t('itineraries.giens_desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Day Section -->
+    <section id="day" class="section-dark">
+      <div class="container">
+        <h2 class="section-title text-white">{{ t('day.title') }}</h2>
+        <p class="pricing-subtitle text-white-opacity">{{ t('day.subtitle') }}</p>
+        
+        <div class="day-timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><ClockIcon size="24" /></div>
+            <div class="timeline-content glass-dark">
+              <h3>{{ t('day.morning') }}</h3>
+              <p>{{ t('day.morning_desc') }}</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><UtensilsIcon size="24" /></div>
+            <div class="timeline-content glass-dark">
+              <h3>{{ t('day.lunch') }}</h3>
+              <p>{{ t('day.lunch_desc') }}</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><WavesIcon size="24" /></div>
+            <div class="timeline-content glass-dark">
+              <h3>{{ t('day.afternoon') }}</h3>
+              <p>{{ t('day.afternoon_desc') }}</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><SmileIcon size="24" /></div>
+            <div class="timeline-content glass-dark">
+              <h3>{{ t('day.evening') }}</h3>
+              <p>{{ t('day.evening_desc') }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -309,10 +427,7 @@
         
         <div class="gallery-grid">
           <div class="gallery-item" v-for="n in 6" :key="n">
-            <div class="gallery-placeholder">
-              <CameraIcon size="48" class="text-primary opacity-50 mb-2" />
-              <span>{{ t('gallery.placeholder') }}</span>
-            </div>
+            <img :src="`./src/assets/gallery${n}.png`" :alt="`Gallery Photo ${n}`" class="gallery-img" />
           </div>
         </div>
       </div>
@@ -455,7 +570,8 @@ import {
   AnchorIcon, MapPinIcon, CarIcon, UserIcon, CheckCircleIcon,
   SunIcon, UtensilsIcon, WavesIcon, MusicIcon, BedIcon, DropletIcon,
   ShieldCheckIcon, PhoneIcon, MessageCircleIcon, PalmtreeIcon, MountainIcon, CompassIcon,
-  ChevronDownIcon, CameraIcon, InstagramIcon, MailIcon, MenuIcon, XIcon
+  ChevronDownIcon, CameraIcon, InstagramIcon, MailIcon, MenuIcon, XIcon,
+  CoffeeIcon, WifiIcon, UsbIcon, LifeBuoyIcon, ClockIcon, ZapIcon, SmileIcon
 } from 'lucide-vue-next'
 
 const { t, locale } = useI18n()
@@ -1549,22 +1665,179 @@ footer {
   background: white;
 }
 
-.gallery-placeholder {
+.gallery-img {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(0, 112, 243, 0.05), rgba(0, 229, 255, 0.05));
-  color: var(--text-secondary);
-  font-weight: 500;
+  object-fit: cover;
   transition: var(--transition);
 }
 
-.gallery-placeholder:hover {
-  background: linear-gradient(135deg, rgba(0, 112, 243, 0.1), rgba(0, 229, 255, 0.1));
-  transform: scale(1.05);
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+}
+
+/* Skipper Image */
+.skipper-image-card {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transform: rotate(2deg);
+  transition: var(--transition);
+}
+
+.skipper-image-card:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.skipper-img {
+  width: 100%;
+  display: block;
+}
+
+.skipper-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: var(--primary-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  white-space: nowrap;
+}
+
+/* Why Section */
+.why-card {
+  padding: 4rem;
+  margin-top: -4rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.why-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.why-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.why-icon-box.stress { background: linear-gradient(135deg, #10B981, #059669); }
+.why-icon-box.parking { background: linear-gradient(135deg, #6366F1, #4F46E5); }
+.why-icon-box.comfort { background: linear-gradient(135deg, #F59E0B, #D97706); }
+.why-icon-box.dining { background: linear-gradient(135deg, #EC4899, #DB2777); }
+.why-icon-box.fun { background: linear-gradient(135deg, #06B6D4, #0891B2); }
+
+.why-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.why-text p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Included Section */
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.included-card {
+  padding: 2.5rem;
+  text-align: center;
+  border: 1px solid rgba(0, 112, 243, 0.1) !important;
+}
+
+.included-icon-box {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.included-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.included-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* Day Timeline */
+.day-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 50px;
+  bottom: -30px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 133, 255, 0.4);
+}
+
+.timeline-content {
+  padding: 2rem;
+  flex: 1;
+}
+
+.timeline-content h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
 }
 
 /* Footer & Legal */
@@ -1775,6 +2048,26 @@ footer {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .why-card {
+    padding: 2rem 1.5rem;
+    margin-top: 0;
+  }
+
+  .why-grid {
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-item:not(:last-child)::after {
+    display: none;
   }
 }
 

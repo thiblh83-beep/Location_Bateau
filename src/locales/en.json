@@ -6,6 +6,7 @@
     "skipper": "Your Skipper",
     "pricing": "Pricing",
     "gallery": "Gallery",
+    "why": "Why LocBoat?",
     "contact": "Contact",
     "book": "Call to Book"
   },
@@ -26,11 +27,11 @@
     "bullet3": "Knowledge of the quietest coves"
   },
   "features": {
-    "title": "The Boat: Cap Camarat 7.15",
-    "boat_desc": "Step aboard a spacious 7.20-meter vessel, renowned for its excellent seaworthiness. Designed for comfort, it can accommodate up to 6 passengers (plus the skipper) ensuring everyone has their own space.",
-    "stat_length_val": "7.20 m",
+    "title": "The Boat: Cap Camarat 7.55",
+    "boat_desc": "Step aboard a spacious 7.50-meter vessel, renowned for its excellent seaworthiness. Designed for comfort, it can accommodate up to 6 passengers (plus the skipper) ensuring everyone has their own space.",
+    "stat_length_val": "7.50 m",
     "stat_length_lbl": "Length",
-    "stat_cap_val": "6 Pax",
+    "stat_cap_val": "6 Places",
     "stat_cap_lbl": "Max Capacity",
     "stat_eng_val": "250 HP",
     "stat_eng_lbl": "Power",
@@ -97,6 +98,45 @@
     "name2": "Sophie L.",
     "review3": "Amazing sunset cruise facing Les Deux Frères. Highly recommended.",
     "name3": "The Martin Family"
+  },
+  },
+  "day": {
+    "title": "Your Perfect Day",
+    "subtitle": "A glimpse of what awaits you...",
+    "morning": "10:00 AM: Welcome & Departure",
+    "morning_desc": "Meet at the port of La Seyne. A warm welcome, settling in, and immediate departure for the open sea.",
+    "lunch": "1:00 PM: Wild Lunch Break",
+    "lunch_desc": "Anchoring in a sheltered cove. Picnic time in the shade of the sun awning, followed by a nap or a coffee facing the sea.",
+    "afternoon": "3:00 PM: Activities & Swimming",
+    "afternoon_desc": "Underwater exploration with masks and snorkels, or a Paddle board ride in turquoise waters.",
+    "evening": "5:30 PM: Back to Port",
+    "evening_desc": "A final gentle cruise along the coast before heading back to shore, with heads full of memories."
+  },
+  "included": {
+    "title": "Everything Provided",
+    "subtitle": "Because luxury means thinking of nothing.",
+    "drinks": "Cold Drinks",
+    "drinks_desc": "Mineral water and coffee offered throughout the day.",
+    "gear": "Leisure Gear",
+    "gear_desc": "Paddle board, snorkeling masks, and snorkels at your full disposal.",
+    "energy": "Power & Music",
+    "energy_desc": "USB ports for your phones and Bluetooth speaker for your playlist.",
+    "safety": "Total Safety",
+    "safety_desc": "Life jackets for everyone (including child sizes) and certified equipment."
+  },
+  "why": {
+    "title": "Why Choose LocBoat?",
+    "subtitle": "The best skippered rental experience in La Seyne-sur-Mer.",
+    "stress": "Zero Stress, No Deposit",
+    "stress_desc": "Sail with peace of mind. I handle the navigation and no deposit is required.",
+    "parking": "Easy & Free Parking",
+    "parking_desc": "Park stress-free just 1 minute from the boat in the large free Navale parking lot.",
+    "comfort": "The Comfort of a Large Boat",
+    "comfort_desc": "The Cap Camarat 7.55 offers a large sunbed, a cabin, and real toilets on board.",
+    "dining": "Shaded Rear Cockpit",
+    "dining_desc": "A large table and sun awning for your meals or aperitifs away from the sun.",
+    "fun": "Leisure Included",
+    "fun_desc": "Paddle board, masks, and snorkels are already on board. Just dive in!"
   },
   "faq": {
     "title": "Frequently Asked Questions",

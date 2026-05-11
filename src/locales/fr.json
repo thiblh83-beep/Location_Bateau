@@ -6,6 +6,7 @@
     "skipper": "Votre Skipper",
     "pricing": "Tarifs",
     "gallery": "Galerie",
+    "why": "Pourquoi LocBoat ?",
     "contact": "Contact",
     "book": "Appeler pour réserver"
   },
@@ -26,11 +27,11 @@
     "bullet3": "Connaissance des criques les plus tranquilles"
   },
   "features": {
-    "title": "Le Bateau : Cap Camarat 7.15",
-    "boat_desc": "Embarquez sur une unité spacieuse de 7,20 mètres, réputée pour son excellente tenue en mer. Conçu pour le confort, il peut accueillir jusqu'à 6 passagers (en plus du skipper) pour garantir à chacun un espace privilégié.",
-    "stat_length_val": "7,20 m",
+    "title": "Le Bateau : Cap Camarat 7.55",
+    "boat_desc": "Embarquez sur une unité spacieuse de 7,50 mètres, réputée pour son excellente tenue en mer. Conçu pour le confort, il peut accueillir jusqu'à 6 passagers (en plus du skipper) pour garantir à chacun un espace privilégié.",
+    "stat_length_val": "7,50 m",
     "stat_length_lbl": "Longueur",
-    "stat_cap_val": "6 Pax",
+    "stat_cap_val": "6 Places",
     "stat_cap_lbl": "Capacité Max",
     "stat_eng_val": "250 CV",
     "stat_eng_lbl": "Puissance",
@@ -103,6 +104,45 @@
     "name2": "Sophie L.",
     "review3": "Apéro sunset au top face aux Deux Frères. On recommande les yeux fermés.",
     "name3": "Famille Martin"
+  },
+  },
+  "day": {
+    "title": "Votre Journée Idéale",
+    "subtitle": "Un exemple de ce qui vous attend...",
+    "morning": "10h00 : Accueil & Départ",
+    "morning_desc": "Rendez-vous au port de La Seyne. Accueil avec le sourire, installation de vos affaires et départ immédiat vers le large.",
+    "lunch": "13h00 : Pause Déjeuner Sauvage",
+    "lunch_desc": "Mouillage dans une crique abritée. C'est l'heure du pique-nique à l'ombre du taud de soleil, suivi d'une sieste ou d'un café face à la mer.",
+    "afternoon": "15h00 : Activités & Baignade",
+    "afternoon_desc": "Exploration des fonds marins avec masques et tubas, ou balade en Paddle dans les eaux turquoise.",
+    "evening": "17h30 : Retour au Port",
+    "evening_desc": "Dernière navigation douce le long des côtes varoises avant de retrouver la terre ferme, des souvenirs plein la tête."
+  },
+  "included": {
+    "title": "Tout est Prévu",
+    "subtitle": "Parce que le luxe, c'est de ne penser à rien.",
+    "drinks": "Boissons Fraîches",
+    "drinks_desc": "Eau minérale et café offerts tout au long de la journée.",
+    "gear": "Matériel de Loisir",
+    "gear_desc": "Paddle, masques de snorkeling et tubas à votre entière disposition.",
+    "energy": "Énergie & Musique",
+    "energy_desc": "Prises USB pour vos téléphones et enceinte Bluetooth pour votre playlist.",
+    "safety": "Sécurité Totale",
+    "safety_desc": "Gilets de sauvetage pour tous (y compris tailles enfants) et équipement aux normes."
+  },
+  "why": {
+    "title": "Pourquoi choisir LocBoat ?",
+    "subtitle": "La meilleure expérience de location avec skipper à La Seyne-sur-Mer.",
+    "stress": "Zéro Stress, Zéro Caution",
+    "stress_desc": "Partez l'esprit tranquille. Je gère la navigation et aucune caution ne vous sera demandée.",
+    "parking": "Parking Facile & Gratuit",
+    "parking_desc": "Garez-vous sans stress à 1 minute du bateau sur le grand parking gratuit de la Navale.",
+    "comfort": "Le Confort d'un Grand Bateau",
+    "comfort_desc": "Le Cap Camarat 7.55 offre un grand bain de soleil, une cabine et de vraies toilettes à bord.",
+    "dining": "Carré Arrière Ombragé",
+    "dining_desc": "Une grande table et un taud de soleil pour vos repas ou apéros à l'abri du soleil.",
+    "fun": "Loisirs Inclus",
+    "fun_desc": "Paddle, masques et tubas sont déjà à bord. Vous n'avez qu'à plonger !"
   },
   "faq": {
     "title": "Questions Fréquentes",
