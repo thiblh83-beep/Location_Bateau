@@ -427,7 +427,7 @@
         
         <div class="gallery-grid">
           <div class="gallery-item" v-for="n in 6" :key="n">
-            <img :src="`./src/assets/gallery${n}.png`" :alt="`Gallery Photo ${n}`" class="gallery-img" />
+            <img :src="getImageUrl(`gallery${n}`)" :alt="`Gallery Photo ${n}`" class="gallery-img" />
           </div>
         </div>
       </div>
@@ -591,6 +591,10 @@ watch(isMenuOpen, (val) => {
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
+}
+
+const getImageUrl = (name) => {
+  return new URL(`./assets/${name}.png`, import.meta.url).href
 }
 
 const toggleLocale = () => {
@@ -790,7 +794,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/hero.png');
+  background-image: url('./assets/hero.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1342,7 +1346,7 @@ onUnmounted(() => {
 
 /* Testimonials Section */
 .testimonials-bg {
-  background: url('../assets/hero.png') center/cover fixed;
+  background: url('./assets/hero.png') center/cover fixed;
   position: relative;
 }
 .testimonials-bg::before {
@@ -1559,7 +1563,7 @@ onUnmounted(() => {
 
 /* Contact CTA */
 .contact-cta {
-  background: url('../assets/hero.png') center/cover fixed;
+  background: url('./assets/hero.png') center/cover fixed;
   position: relative;
 }
 
