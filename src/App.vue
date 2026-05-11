@@ -17,20 +17,30 @@
           <img src="./assets/logo.png" alt="LocBoat Logo" class="logo-img" />
           <span style="display: none;">LocBoat</span>
         </div>
-        <div class="nav-links">
-          <a href="#skipper">{{ t('nav.skipper') }}</a>
-          <a href="#features">{{ t('nav.boat') }}</a>
-          <a href="#pricing">{{ t('nav.pricing') }}</a>
-          <a href="#gallery">{{ t('nav.gallery') }}</a>
+        <div class="nav-mobile-btns">
+          <button class="mobile-menu-toggle" @click="isMenuOpen = !isMenuOpen" :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'">
+            <MenuIcon v-if="!isMenuOpen" size="28" />
+            <XIcon v-else size="28" />
+          </button>
+        </div>
+
+        <div :class="['nav-links', { 'active': isMenuOpen }]">
+          <a href="#skipper" @click="isMenuOpen = false">{{ t('nav.skipper') }}</a>
+          <a href="#features" @click="isMenuOpen = false">{{ t('nav.boat') }}</a>
+          <a href="#pricing" @click="isMenuOpen = false">{{ t('nav.pricing') }}</a>
+          <a href="#gallery" @click="isMenuOpen = false">{{ t('nav.gallery') }}</a>
           <button class="lang-switch" @click="toggleLocale">
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </button>
           <a href="https://www.instagram.com/locboat83/" target="_blank" class="nav-insta-btn" title="Instagram">
             <InstagramIcon size="22" />
           </a>
-          <a href="tel:+33635407550" class="btn btn-primary nav-btn">{{ t('nav.book') }}</a>
+          <a href="tel:+33635407550" class="btn btn-primary nav-btn" @click="isMenuOpen = false">{{ t('nav.book') }}</a>
         </div>
       </div>
+      
+      <!-- Mobile Overlay -->
+      <div v-if="isMenuOpen" class="nav-overlay" @click="isMenuOpen = false"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -439,19 +449,29 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { 
   AnchorIcon, MapPinIcon, CarIcon, UserIcon, CheckCircleIcon,
   SunIcon, UtensilsIcon, WavesIcon, MusicIcon, BedIcon, DropletIcon,
   ShieldCheckIcon, PhoneIcon, MessageCircleIcon, PalmtreeIcon, MountainIcon, CompassIcon,
-  ChevronDownIcon, CameraIcon, InstagramIcon, MailIcon
+  ChevronDownIcon, CameraIcon, InstagramIcon, MailIcon, MenuIcon, XIcon
 } from 'lucide-vue-next'
 
 const { t, locale } = useI18n()
 const isScrolled = ref(false)
 const activeFaq = ref(null)
 const showLegalModal = ref(false)
+const isMenuOpen = ref(false)
+
+// Prevent scroll when menu is open
+watch(isMenuOpen, (val) => {
+  if (val) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+})
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
@@ -610,6 +630,33 @@ onUnmounted(() => {
 .nav-insta-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+}
+
+.nav-mobile-btns {
+  display: none;
+}
+
+.mobile-menu-toggle {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(10, 37, 64, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 998;
 }
 
 /* Hero Section */
@@ -1584,46 +1631,173 @@ footer {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .hero-card {
+    padding: 2.5rem;
+  }
+  
+  .hero-card h1 {
+    font-size: 3rem;
+  }
+  
+  section {
+    padding: 6rem 0;
+  }
+}
+
 @media (max-width: 992px) {
   .skipper-container,
   .location-container {
     grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .skipper-image-wrapper {
+    order: -1;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .top-bar {
     display: none;
+  }
+  
+  .navbar {
+    top: 0;
+    padding: 0.75rem 0;
+  }
+  
+  .logo-img {
+    height: 60px;
+  }
+  
+  .nav-mobile-btns {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links a:not(.btn) {
+    font-size: 1.2rem;
+  }
+  
+  .hero {
+    padding-top: 80px;
+    height: auto;
+    min-height: 80vh;
+  }
+  
+  .hero-card {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
   }
   
   .hero-card h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   
-  .pricing-card.featured {
+  .hero-badges {
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .feature, .itinerary-card, .pricing-card, .testimonial-card, .location-card {
+    padding: 1.5rem !important;
+  }
+  
+  .pricing-cards {
+    gap: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .pricing-card--featured {
     transform: scale(1);
   }
   
-  .pricing-card.featured:hover {
-    transform: translateY(-10px);
+  .pricing-card--featured:hover {
+    transform: translateY(-5px);
   }
   
-  .cta-box h2 {
-    font-size: 2.5rem;
-  }
-  
-  .map-container {
-    min-height: 300px;
-  }
-
   .steps-container {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
-
+  
   .step-connector {
     display: none;
+  }
+  
+  .cta-box {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-box h2 {
+    font-size: 2.2rem;
+  }
+  
+  .cta-box p {
+    font-size: 1.1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .cta-main-btn {
+    font-size: 1.1rem;
+    padding: 1.2rem 2rem;
+  }
+  
+  .card-label {
+    font-size: 1.4rem;
+  }
+  
+  .season-amount {
+    font-size: 1.5rem;
   }
 }
 </style>
