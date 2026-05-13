@@ -11,11 +11,11 @@
     "book": "Appeler pour réserver"
   },
   "hero": {
-    "title": "Votre Journée en Mer avec Skipper Privé",
-    "subtitle": "Embarquez sur un Cap Camarat 7.15 WA pour explorer Porquerolles et les plus belles criques. Laissez-vous guider, profitez du soleil, on s'occupe du reste.",
+    "title": "Votre Journée en Mer avec Skipper Privé OFFERT !",
+    "subtitle": "Embarquez sur un Cap Camarat 7.55 WA en co-navigation pour explorer Porquerolles et les plus belles criques. Laissez-vous guider, profitez du soleil, on s'occupe du reste.",
     "cta": "Réserver maintenant",
     "location": "Départ : La Seyne-sur-Mer",
-    "parking": "Grand parking  & borne auto à 1min"
+    "parking": "Grand parking  & borne électrique à 1min"
   },
   "skipper": {
     "title": "Naviguez l'esprit tranquille",
@@ -72,20 +72,25 @@
   },
   "pricing": {
     "title": "Nos Formules",
-    "subtitle": "Tarifs nets avec Skipper offert !!!\n Essence non comprise : le plein sera fait à la pompe en fin de journée.",
+    "subtitle": "Tarifs nets avec Skipper offert (Co-navigation) !!!\n Essence non comprise : le plein sera fait à la pompe en fin de journée.",
     "full_day": "Journée Entière",
     "full_day_time": "9h-17h ou 10h-18h (Modulable)",
-    "full_day_high": "750€ (Juillet-Août)",
-    "full_day_low": "600€ (Hors saison)",
+    "full_day_high": "650€ (Juillet-Août)",
+    "full_day_low": "550€ (Hors saison)",
     "half_day": "Demi-journée",
     "half_day_time": "10h-14h ou 14h-18h (Modulable)",
-    "half_day_high": "450€ (Juillet-Août)",
+    "half_day_high": "400€ (Juillet-Août)",
     "half_day_low": "350€ (Hors saison)",
-    "sunset": "Apéro Sunset 🌅",
+    "sunset": "Apéro Sunset (Co-navigation) 🌅",
     "sunset_time": "18h30 – 21h30 (Modulable)",
     "sunset_desc": "Profitez du coucher de soleil en mer. Idéal pour un apéro entre amis ou en amoureux.",
     "sunset_price": "300€",
-    "no_deposit": "SANS CAUTION"
+    "no_deposit": "SANS CAUTION",
+    "picnic_title": "Option Panier Pic-Nique Italien 🇮🇹",
+    "picnic_subtitle": "Je m'occupe de tout ! En collaboration avec une épicerie 100% italienne, nous vous proposons des menus frais et authentiques.",
+    "picnic_desc": "Produits 100% italiens sélectionnés avec soin pour agrémenter votre journée en mer.",
+    "sunset_menu_title": "Formule Apéro Sunset Premium",
+    "sunset_menu_desc": "Planche mixte charcuterie/fromage (ou au choix 100% italien), vin italien, bière ou jus, focaccia artisanale et Tiramisu traditionnel en dessert."
   },
   "steps": {
     "title": "Comment ça se passe ?",
@@ -107,6 +112,7 @@
   },
   "day": {
     "title": "Votre Journée Idéale",
+    "view_more": "Voir un exemple de journée",
     "subtitle": "Un exemple de ce qui vous attend...",
     "morning": "10h00 : Accueil & Départ",
     "morning_desc": "Rendez-vous au port de La Seyne. Accueil avec le sourire, installation de vos affaires et départ immédiat vers le large.",
@@ -121,7 +127,7 @@
     "title": "Tout est Prévu",
     "subtitle": "Pour une journée en total détente...",
     "drinks": "Glacière",
-    "drinks_desc": "Pour un petit peu de fraicheur à bord du bateau.",
+    "drinks_desc": "Pour de la fraicheur tout au long de votre journée.",
     "gear": "Matériel de Loisir",
     "gear_desc": "Paddle, masques de snorkeling et tubas à votre entière disposition.",
     "energy": "Énergie & Musique",

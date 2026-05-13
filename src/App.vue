@@ -298,9 +298,15 @@
     <section id="day" class="section-dark">
       <div class="container">
         <h2 class="section-title text-white">{{ t('day.title') }}</h2>
-        <p class="pricing-subtitle text-white-opacity">{{ t('day.subtitle') }}</p>
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <button @click="showDaySample = !showDaySample" class="btn btn-secondary day-toggle-btn">
+            {{ showDaySample ? t('legal.close') : t('day.view_more') }}
+            <ChevronDownIcon :style="{ transform: showDaySample ? 'rotate(180deg)' : 'rotate(0)' }" class="ml-2 transition-transform" />
+          </button>
+        </div>
         
-        <div class="day-timeline">
+        <div v-if="showDaySample" class="day-timeline">
+          <p class="pricing-subtitle text-white-opacity" style="text-align: center; margin-top: 0;">{{ t('day.subtitle') }}</p>
           <div class="timeline-item">
             <div class="timeline-icon"><ClockIcon size="24" /></div>
             <div class="timeline-content glass-dark">
@@ -342,7 +348,7 @@
         <div class="pricing-cards">
           <!-- Half Day -->
           <div class="pricing-card">
-            <div class="card-label">Demi-journée</div>
+            <div class="card-label">{{ t('pricing.half_day') }}</div>
             <div class="card-time">{{ t('pricing.half_day_time') }}</div>
             <div class="card-prices">
               <div class="season-price">
@@ -361,7 +367,7 @@
           <!-- Full Day (featured) -->
           <div class="pricing-card pricing-card--featured">
             <div class="featured-tag">Idéal</div>
-            <div class="card-label">Journée Entière</div>
+            <div class="card-label">{{ t('pricing.full_day') }}</div>
             <div class="card-time">{{ t('pricing.full_day_time') }}</div>
             <div class="card-prices">
               <div class="season-price">
@@ -379,7 +385,7 @@
 
           <!-- Sunset -->
           <div class="pricing-card pricing-card--sunset">
-            <div class="card-label">🌅 Apéro Sunset</div>
+            <div class="card-label">{{ t('pricing.sunset') }}</div>
             <div class="card-time">{{ t('pricing.sunset_time') }}</div>
             <div class="card-prices">
               <div class="season-price">
@@ -414,6 +420,33 @@
             <div class="step-number">3</div>
             <h3>{{ t('steps.step3') }}</h3>
             <p>{{ t('steps.step3_desc') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Picnic Italian Section -->
+    <section id="picnic" class="section-light picnic-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="glass picnic-card">
+          <div class="picnic-content">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">{{ t('picnic_title') || t('pricing.picnic_title') }}</h2>
+            <h3 class="gradient-text picnic-subtitle">{{ t('picnic_subtitle') || t('pricing.picnic_subtitle') }}</h3>
+            <p class="picnic-desc">{{ t('picnic_desc') || t('pricing.picnic_desc') }}</p>
+            
+            <div class="picnic-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><UtensilsIcon size="20" /></div>
+                <div>
+                  <h4>{{ t('sunset_menu_title') || t('pricing.sunset_menu_title') }}</h4>
+                  <p>{{ t('sunset_menu_desc') || t('pricing.sunset_menu_desc') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="picnic-image">
+            <div class="picnic-badge">100% Italienne</div>
+            <img src="./assets/gallery4.png" alt="Picnic Italien" />
           </div>
         </div>
       </div>
@@ -518,7 +551,7 @@
           <p>{{ t('contact.desc') }}</p>
           <div class="cta-buttons">
             <a href="tel:+33635407550" class="btn btn-primary cta-main-btn">
-              <PhoneIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.call_now') }} (+33 6 35 40 75 50)
+              <PhoneIcon size="24" style="margin-right: 0.5rem;" /> <span style="white-space: nowrap;">{{ t('contact.call_now') }} (+33 6 35 40 75 50)</span>
             </a>
             <a href="https://wa.me/33635407550" target="_blank" class="btn btn-whatsapp">
               <MessageCircleIcon size="24" style="margin-right: 0.5rem;" /> {{ t('contact.whatsapp') }}
@@ -579,6 +612,7 @@ const isScrolled = ref(false)
 const activeFaq = ref(null)
 const showLegalModal = ref(false)
 const isMenuOpen = ref(false)
+const showDaySample = ref(false)
 
 // Prevent scroll when menu is open
 watch(isMenuOpen, (val) => {
@@ -2074,6 +2108,119 @@ footer {
     display: none;
   }
 }
+
+/* Picnic Section */
+.picnic-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  overflow: hidden;
+  gap: 0;
+  border: 1px solid rgba(0, 112, 243, 0.1);
+}
+
+.picnic-content {
+  padding: 4rem;
+}
+
+.picnic-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.picnic-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.picnic-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.highlight-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--bg-color);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.highlight-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.highlight-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.picnic-image {
+  position: relative;
+  min-height: 400px;
+}
+
+.picnic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picnic-badge {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: white;
+  color: #E0115F; /* Un rouge un peu cerise */
+  padding: 0.5rem 1.2rem;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .picnic-card {
+    grid-template-columns: 1fr;
+  }
+  .picnic-content {
+    padding: 3rem 2rem;
+  }
+  .picnic-image {
+    min-height: 300px;
+    order: -1;
+  }
+}
+
+.day-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.day-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ml-2 { margin-left: 0.5rem; }
+.transition-transform { transition: transform 0.3s ease; }
+</style>
 
 @media (max-width: 480px) {
   .hero-card h1 {
