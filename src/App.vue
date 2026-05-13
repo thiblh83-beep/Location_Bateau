@@ -2220,7 +2220,6 @@ footer {
 
 .ml-2 { margin-left: 0.5rem; }
 .transition-transform { transition: transform 0.3s ease; }
-</style>
 
 @media (max-width: 480px) {
   .hero-card h1 {
