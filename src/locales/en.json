@@ -11,7 +11,7 @@
     "book": "Call to Book"
   },
   "hero": {
-    "title": "Your Sea Day with a Private Skipper",
+    "title": "Your Sea Day with a Private Skipper <span class='underline'>included</span> !!",
     "subtitle": "Board a Cap Camarat 7.15 WA to explore Porquerolles and the most beautiful coves. Let us guide you, enjoy the sun, we'll take care of the rest.",
     "cta": "Book Now",
     "location": "Departure: La Seyne-sur-Mer",
@@ -66,25 +66,20 @@
   },
   "pricing": {
     "title": "Our Packages",
-    "subtitle": "Net rates with Skipper included (Co-navigation). NO DEPOSIT. (Fuel not included: refilled at the pump at the end of the day based on your consumption).",
+    "subtitle": "Net rates with Skipper <span class='underline'>included</span> (Co-navigation). NO DEPOSIT. (Fuel not included: refilled at the pump at the end of the day based on your consumption).",
     "full_day": "Full Day",
-    "full_day_time": "9am-5pm or 10am-6pm (Flexible)",
-    "full_day_high": "€750 (July-August)",
-    "full_day_low": "€600 (Off-season)",
+    "full_day_time": "9am-5pm or 10am-6pm (Flexible) \n (Co-navigation)",
+    "full_day_high": "€650 (July-August)",
+    "full_day_low": "€550 (Off-season)",
     "half_day": "Half-day",
-    "half_day_time": "9am-2pm or 2pm-6pm",
-    "half_day_high": "€450 (July-August)",
+    "half_day_time": "9am-2pm or 2pm-6pm (Flexible) \n (Co-navigation)",
+    "half_day_high": "€400 (July-August)",
     "half_day_low": "€350 (Off-season)",
-    "sunset": "Sunset Cruise (Co-navigation) 🌅",
-    "sunset_time": "6:30pm – 9:30pm",
+    "sunset": "Sunset Cruise 🌅",
+    "sunset_time": "6:30pm – 9:30pm \n (Co-navigation)",
     "sunset_desc": "Enjoy the sunset at sea. Ideal for drinks with friends or a romantic evening.",
     "sunset_price": "€300",
-    "no_deposit": "NO DEPOSIT",
-    "picnic_title": "Italian Picnic Basket Option 🇮🇹",
-    "picnic_subtitle": "I take care of everything! In collaboration with a 100% Italian grocery store, we offer fresh and authentic menus.",
-    "picnic_desc": "100% Italian products carefully selected to enhance your day at sea.",
-    "sunset_menu_title": "Premium Sunset Apéro Package",
-    "sunset_menu_desc": "Mixed charcuterie/cheese board (or your choice of 100% Italian), Italian wine, beer or juice, artisanal focaccia, and traditional Tiramisu for dessert."
+    "no_deposit": "NO DEPOSIT"
   },
   "steps": {
     "title": "How it works?",
@@ -106,7 +101,6 @@
   },
   "day": {
     "title": "Your Perfect Day",
-    "view_more": "See a sample day",
     "subtitle": "A glimpse of what awaits you...",
     "morning": "10:00 AM: Welcome & Departure",
     "morning_desc": "Meet at the port of La Seyne. A warm welcome, settling in, and immediate departure for the open sea.",

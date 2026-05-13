@@ -49,7 +49,7 @@
       <div class="hero-bg"></div>
       <div class="container hero-content">
         <div class="glass hero-card">
-          <h1 class="gradient-text">{{ t('hero.title') }}</h1>
+          <h1 class="gradient-text" v-html="t('hero.title')"></h1>
           <p class="subtitle">{{ t('hero.subtitle') }}</p>
           <div class="hero-badges">
             <span class="badge"><MapPinIcon size="16" /> {{ t('hero.location') }}</span>
@@ -343,7 +343,7 @@
     <section id="pricing" class="section-dark">
       <div class="container">
         <h2 class="section-title text-white">{{ t('pricing.title') }}</h2>
-        <p class="pricing-subtitle text-white-opacity">{{ t('pricing.subtitle') }}</p>
+        <p class="pricing-subtitle text-white-opacity" v-html="t('pricing.subtitle')"></p>
         
         <div class="pricing-cards">
           <!-- Half Day -->
@@ -353,12 +353,12 @@
             <div class="card-prices">
               <div class="season-price">
                 <span class="season-label">Juillet – Août</span>
-                <span class="season-amount">450€</span>
+                <span class="season-amount">400€</span>
               </div>
               <div class="season-divider"></div>
               <div class="season-price">
                 <span class="season-label">Hors saison</span>
-                <span class="season-amount season-amount--low">350€</span>
+                <span class="season-amount season-amount--low">300€</span>
               </div>
             </div>
             <div class="card-badge"><ShieldCheckIcon size="14"/> {{ t('pricing.no_deposit') }}</div>
@@ -372,12 +372,12 @@
             <div class="card-prices">
               <div class="season-price">
                 <span class="season-label">Juillet – Août</span>
-                <span class="season-amount">750€</span>
+                <span class="season-amount">650€</span>
               </div>
               <div class="season-divider"></div>
               <div class="season-price">
                 <span class="season-label">Hors saison</span>
-                <span class="season-amount season-amount--low">600€</span>
+                <span class="season-amount season-amount--low">550€</span>
               </div>
             </div>
             <div class="card-badge"><ShieldCheckIcon size="14"/> {{ t('pricing.no_deposit') }}</div>
@@ -649,6 +649,13 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+/* General Utilities */
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-underline-offset: 4px;
+}
+
 /* Top Bar */
 .top-bar {
   background: var(--bg-color);
